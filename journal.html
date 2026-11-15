@@ -385,6 +385,21 @@ $('#review-button').addEventListener('click', () => {
 window.attachMemoVoice($('#notes-card'));
 
 ;
+(function () {
+  'use strict';
+  const views = new Set(['today','weather','journals','search','graphs']);
+  window.SJNavigation = {
+    open(view) {
+      const selected = views.has(view) ? view : 'today';
+      // Streamlit srcdoc frames can reject History updates. Navigation must
+      // remain usable without changing either the iframe or parent address.
+      try { window.history.replaceState(null,'',`#${selected}`); } catch {}
+      window.showJournalView(selected);
+    }
+  };
+})();
+
+;
 (function (root) {
   'use strict';
   const slots = [{label:'오전 1',start:8,end:10},{label:'오전 2',start:10,end:12},{label:'오후 1',start:13,end:15},{label:'오후 2',start:15,end:17}];
@@ -472,7 +487,8 @@ window.attachMemoVoice($('#notes-card'));
     window.dispatchEvent(new CustomEvent('sj-view',{detail:view}));
     document.title=`SJ 현장일지 · ${graphs ? '그래프' : search ? '검색' : journals ? '일지 목록·달력' : weather ? '봉수면 날씨 기록' : '오늘 기록'}`;
   }
-  qa('[data-view]').forEach(el => el.addEventListener('click',e => { e.preventDefault(); const view=el.dataset.view; history.replaceState(null,'',`#${view}`); showView(view); }));
+  qa('[data-view]').forEach(el => el.addEventListener('click',e => { e.preventDefault(); window.SJNavigation.open(el.dataset.view); }));
+  q('.brand').addEventListener('click',e=>{e.preventDefault();window.SJNavigation.open('today');});
   window.addEventListener('hashchange',()=>showView(['weather','journals','search','graphs'].includes(window.location.hash.slice(1))?window.location.hash.slice(1):'today'));
   function setStatus(message,error=false) {
     q('#weather-status').textContent=message; q('#weather-status').classList.toggle('error',error);
@@ -771,7 +787,7 @@ window.attachMemoVoice($('#notes-card'));
   const today=()=>new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
   let month=today().slice(0,7);
   const node=(tag,label,cls)=>{const el=document.createElement(tag);el.textContent=label;if(cls)el.className=cls;return el;};
-  function open(date){window.JournalStore.open(date);history.replaceState(null,'','#today');window.showJournalView('today');window.scrollTo({top:0,behavior:'auto'});}
+  function open(date){window.JournalStore.open(date);window.SJNavigation.open('today');window.scrollTo({top:0,behavior:'auto'});}
   function render(){
     const records=window.JournalStore.list();
     const importantOnly=q('#important-only').checked;
@@ -889,7 +905,7 @@ window.attachMemoVoice($('#notes-card'));
         }
         if(item.memo)button.append(node('span',item.memo,'search-memo'));
         button.append(node('small','일지 열기 →'));
-        button.addEventListener('click',()=>{window.JournalStore.open(item.date);history.replaceState(null,'','#today');window.showJournalView('today');window.scrollTo({top:0,behavior:'auto'});});
+        button.addEventListener('click',()=>{window.JournalStore.open(item.date);window.SJNavigation.open('today');window.scrollTo({top:0,behavior:'auto'});});
         section.append(button);
       }
       q('#search-results').append(section);
@@ -934,7 +950,7 @@ window.attachMemoVoice($('#notes-card'));
   const color=s=>colors[(s.area==='태동'?2:0)+(s.period==='오후'?1:0)];
   function node(tag,label,cls){const el=document.createElement(tag);el.textContent=label;if(cls)el.className=cls;return el;}
   function svgNode(tag,attrs,label){const el=document.createElementNS(ns,tag);Object.entries(attrs).forEach(([k,v])=>el.setAttribute(k,v));if(label!==undefined)el.textContent=label;return el;}
-  function open(date){window.JournalStore.open(date);history.replaceState(null,'','#today');window.showJournalView('today');window.scrollTo({top:0,behavior:'auto'});}
+  function open(date){window.JournalStore.open(date);window.SJNavigation.open('today');window.scrollTo({top:0,behavior:'auto'});}
   function chart(target,metric,dates,series){
     const container=q(target);container.replaceChildren();
     const all=series.flatMap(s=>s.values.map(v=>v[metric]).filter(n=>n!==null));
