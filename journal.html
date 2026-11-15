@@ -108,8 +108,9 @@ body{background:#e9ede7}.main-shell{width:100%;max-width:480px;margin:0 auto;bac
     </main>
   </div>
   <dialog id="review-dialog"><div class="dialog-heading"><div><span class="eyebrow">REVIEW</span><h2>입력 내용 확인</h2></div><button type="button" class="icon-button" id="close-review" aria-label="닫기">×</button></div><p class="dialog-notice">입력은 기기에 자동 저장됩니다. Google Drive 전송 상태는 상단에서 확인해 주세요.</p><pre id="review-content"></pre><button type="button" class="primary-button" id="back-to-form">입력 화면으로</button></dialog>
-  <dialog id="drive-dialog"><div class="dialog-heading"><h2>Google Drive 연동 설정</h2><button type="button" class="icon-button" id="drive-close" aria-label="연동 설정 닫기">×</button></div><p class="field-hint">전체 전송 한 번으로 SJ 현장일지 파일의 오늘일지·날씨기록·일지달력·그래프를 취합합니다. 전송된 원본과 수정 이력은 함께 보관합니다.</p><button type="button" id="voice-check-open" class="outline-button">음성 점검 · 갤럭시</button><form id="drive-config"><label>웹 앱 URL (/exec)<input id="drive-url" type="url" required placeholder="https://script.google.com/macros/s/…/exec"></label><label>연결 키<input id="drive-key" type="password" required autocomplete="off" placeholder="Apps Script의 SJ_KEY 값"></label><label>스프레드시트 주소<input id="drive-sheet-url" type="url" placeholder="https://docs.google.com/spreadsheets/d/…/edit"></label><p class="field-hint">URL과 키는 이 브라우저에 보관됩니다. 연결 확인은 일지를 보내지 않고 진행합니다. 자동 전송은 별도로 켜 주세요.</p><p id="drive-config-status" role="status"></p><div class="drive-actions"><button type="button" id="drive-test">연결 확인</button><button type="submit">설정 저장</button></div></form><details><summary>처음 한 번 연결하는 방법</summary><ol><li>Google Sheets를 새로 만들고 확장 프로그램 → Apps Script를 엽니다. 또는 독립 Apps Script 프로젝트를 사용해도 됩니다.</li><li>google_apps_script.js 전체 내용을 붙여넣고 저장합니다.</li><li>SJ현장일지생성 함수를 실행하고 권한을 승인합니다. 네 개 탭이 즉시 생성됩니다. 연결 키는 프로젝트 설정 → 스크립트 속성 → SJ_KEY에서 복사합니다.</li><li>배포 → 새 배포 → 웹 앱. 실행 사용자: 나 / 액세스: 모든 사용자로 설정합니다. 연결 키가 일지 전송을 보호하며 시트 자체를 공개하지 않습니다.</li><li>배포된 /exec URL과 연결 키를 위에 입력하고 연결 확인 → 설정 저장을 누릅니다.</li></ol></details><p class="field-hint">전체 전송은 기기의 모든 저장 일지·날씨 조회 이력을 보내고, 기존 클라우드 원본과 취합해 4개 탭과 차트를 갱신합니다. 시트의 내용을 앱으로 가져오는 기능은 아직 지원하지 않습니다.</p></dialog>
+  <dialog id="drive-dialog"><div class="dialog-heading"><h2>Google Drive 연동 설정</h2><button type="button" class="icon-button" id="drive-close" aria-label="연동 설정 닫기">×</button></div><p class="field-hint">전체 전송 한 번으로 SJ 현장일지 파일의 오늘일지·날씨기록·일지달력·그래프를 취합합니다. 전송된 원본과 수정 이력은 함께 보관합니다.</p><button type="button" id="voice-check-open" class="outline-button">음성 점검 · 갤럭시</button><button type="button" id="reset-open" class="outline-button">테스트 기록 초기화</button><form id="drive-config"><label>웹 앱 URL (/exec)<input id="drive-url" type="url" required placeholder="https://script.google.com/macros/s/…/exec"></label><label>연결 키<input id="drive-key" type="password" required autocomplete="off" placeholder="Apps Script의 SJ_KEY 값"></label><label>스프레드시트 주소<input id="drive-sheet-url" type="url" placeholder="https://docs.google.com/spreadsheets/d/…/edit"></label><p class="field-hint">URL과 키는 이 브라우저에 보관됩니다. 연결 확인은 일지를 보내지 않고 진행합니다. 자동 전송은 별도로 켜 주세요.</p><p id="drive-config-status" role="status"></p><div class="drive-actions"><button type="button" id="drive-test">연결 확인</button><button type="submit">설정 저장</button></div></form><details><summary>처음 한 번 연결하는 방법</summary><ol><li>Google Sheets를 새로 만들고 확장 프로그램 → Apps Script를 엽니다. 또는 독립 Apps Script 프로젝트를 사용해도 됩니다.</li><li>google_apps_script.js 전체 내용을 붙여넣고 저장합니다.</li><li>SJ현장일지생성 함수를 실행하고 권한을 승인합니다. 네 개 탭이 즉시 생성됩니다. 연결 키는 프로젝트 설정 → 스크립트 속성 → SJ_KEY에서 복사합니다.</li><li>배포 → 새 배포 → 웹 앱. 실행 사용자: 나 / 액세스: 모든 사용자로 설정합니다. 연결 키가 일지 전송을 보호하며 시트 자체를 공개하지 않습니다.</li><li>배포된 /exec URL과 연결 키를 위에 입력하고 연결 확인 → 설정 저장을 누릅니다.</li></ol></details><p class="field-hint">전체 전송은 기기의 모든 저장 일지·날씨 조회 이력을 보내고, 기존 클라우드 원본과 취합해 4개 탭과 차트를 갱신합니다. 시트의 내용을 앱으로 가져오는 기능은 아직 지원하지 않습니다.</p></dialog>
   <dialog id="voice-check-dialog"><div class="dialog-heading"><h2>갤럭시 음성 점검</h2><button type="button" class="icon-button" id="voice-check-close" aria-label="음성 점검 닫기">×</button></div><dl id="voice-check-info" class="voice-check-info"></dl><p class="field-hint">S24 FE 등 갤럭시의 Chrome 기준입니다. 지원 표시만으로 음성 서버 연결 성공을 뜻하지 않습니다.</p><button type="button" class="primary-button" id="voice-check-mic">마이크 권한 확인</button><p id="voice-check-status" role="status" class="field-hint"></p><p class="field-hint">파일 주소(file/content)나 카카오톡 내부에서 실패하면 HTTPS 웹앱을 Chrome에서 열어야 할 수 있습니다. 입력칸을 눌러 키보드로 직접 입력하는 기능은 계속 사용할 수 있습니다.</p></dialog>
+<dialog id="reset-dialog"><div class="dialog-heading"><h2>테스트 기록 초기화</h2><button type="button" id="reset-close" class="icon-button" aria-label="초기화 창 닫기">×</button></div><p class="field-hint">이 브라우저의 모든 일지·날씨·중요 기록을 비웁니다. 자동 전송은 꺼지고, Google 연결 설정은 유지합니다. 다른 기기의 기록은 지워지지 않습니다.</p><label class="check-label"><input id="reset-cloud" type="checkbox">연결된 Google 시트도 함께 초기화</label><p class="field-hint">Google 기록은 ‘초기화백업’ 탭으로 보관한 뒤 빈 보고서를 만듭니다. 기기 기록은 JSON 백업으로 내려받습니다. 다른 기기에서 옛 기록을 전송하면 다시 들어올 수 있습니다.</p><label class="input-field"><span>확인을 위해 ‘초기화’를 입력하세요</span><input id="reset-confirm" type="text" autocomplete="off" placeholder="초기화"></label><p id="reset-status" role="status" class="field-hint"></p><button type="button" id="reset-run" class="outline-button">백업 후 초기화</button></dialog>
 <script>
 (function () {
   'use strict';
@@ -484,6 +485,15 @@ window.attachMemoVoice($('#notes-card'));
   const text = (tag,value,className) => { const el=document.createElement(tag); el.textContent=value; if(className) el.className=className; return el; };
   const value = (n,unit) => typeof n === 'number' && Number.isFinite(n) ? `${n}${unit}` : '—';
   let database, sequence=0, currentRecord=null, storageError='', activeController;
+  let paused=false;
+  try{paused=localStorage.getItem('sj-weather-paused')==='true';}catch{}
+  function pause(){paused=true;sequence++;activeController?.abort();try{localStorage.setItem('sj-weather-paused','true');}catch{}}
+  async function clearWeather(){
+    pause();await ready;if(!database)throw new Error(storageError||'날씨 저장소를 열 수 없습니다.');
+    await new Promise((resolve,reject)=>{const tx=database.transaction(['days','revisions'],'readwrite');tx.objectStore('days').clear();tx.objectStore('revisions').clear();tx.oncomplete=resolve;tx.onerror=tx.onabort=()=>reject(new Error('날씨 초기화 실패'));});
+    render(null);await historyList();q('#weather-refresh').disabled=false;
+    setStatus('테스트 날씨 기록을 초기화했습니다. 새로 불러오기를 누르면 수집을 다시 시작합니다.');
+  }
   const ready = new Promise(resolve => {
     try {
       const request = indexedDB.open('hyeonjang-weather',1);
@@ -563,6 +573,8 @@ window.attachMemoVoice($('#notes-card'));
     if (!records.length) q('#weather-history').append(text('p',storageError || '날씨를 불러오면 날짜별 기록이 여기에 쌓입니다.','field-hint'));
   }
   async function load(force=false) {
+    if(paused&&!force){await ready;render(null);await historyList();setStatus('날씨 수집이 일시 중지됐습니다. 날씨 새로 불러오기를 눌러 시작하세요.');return;}
+    if(force){paused=false;try{localStorage.removeItem('sj-weather-paused');}catch{}}
     const ticket=++sequence; activeController?.abort(); activeController=new AbortController();
     const controller=activeController;
     const date=q('#weather-date').value;
@@ -628,7 +640,7 @@ window.attachMemoVoice($('#notes-card'));
       const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=`봉수면-날씨기록-${today()}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
     }catch(e){setStatus(e.message,true);}
   });
-  window.WeatherStore={list:async()=>{await ready;if(!database)throw new Error(storageError||'날씨 저장소를 열 수 없습니다.');return dbRequest('days','getAll');},exportAll:async()=>{await ready;if(!database)throw new Error(storageError||'날씨 저장소를 열 수 없습니다.');const [days,revisions]=await Promise.all([dbRequest('days','getAll'),dbRequest('revisions','getAll')]);return {days,revisions};}};
+  window.WeatherStore={pause,clear:clearWeather,list:async()=>{await ready;if(!database)throw new Error(storageError||'날씨 저장소를 열 수 없습니다.');return dbRequest('days','getAll');},exportAll:async()=>{await ready;if(!database)throw new Error(storageError||'날씨 저장소를 열 수 없습니다.');const [days,revisions]=await Promise.all([dbRequest('days','getAll'),dbRequest('revisions','getAll')]);return {days,revisions};}};
   showView(['weather','journals','search','graphs'].includes(window.location.hash.slice(1))?window.location.hash.slice(1):'today');
   load();
   // Refresh only while in use; opening a saved past date preserves its recorded snapshot.
@@ -729,7 +741,7 @@ window.attachMemoVoice($('#notes-card'));
   window.addEventListener('pagehide',save);
   function validate(c){if(!/^https:\/\/script\.google\.com\/macros\/s\/[A-Za-z0-9_-]+\/exec$/.test(c.url))throw new Error('배포된 script.google.com의 /exec 주소를 입력해 주세요.');if(c.key.length<24)throw new Error('초기설정에서 발급한 연결 키를 입력해 주세요.');if(c.sheet&&!/^https:\/\/docs\.google\.com\/spreadsheets\/d\/[A-Za-z0-9_-]+(?:\/.*)?$/.test(c.sheet))throw new Error('Google Sheets 주소를 확인해 주세요.');}
   async function request(c,action,record) {
-    validate(c);const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),30000);
+    validate(c);const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),action==='reset'?120000:30000);
     try {
       const response=await fetch(c.url,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({app:'sj-journal',version:1,key:c.key,action,record}),redirect:'follow',credentials:'omit',signal:controller.signal});
       if(!response.ok)throw new Error(`응답 오류 ${response.status}`);
@@ -768,13 +780,50 @@ window.attachMemoVoice($('#notes-card'));
   const readConfig=()=>({url:q('#drive-url').value.trim(),key:q('#drive-key').value.trim(),sheet:q('#drive-sheet-url').value.trim(),auto:!!config.auto});
   q('#drive-settings').addEventListener('click',openSettings);q('#drive-close').addEventListener('click',()=>q('#drive-dialog').close());
   q('#drive-config').addEventListener('submit',e=>{e.preventDefault();try{const candidate=readConfig();validate(candidate);localStorage.setItem(configKey,JSON.stringify(candidate));config=candidate;applyConfig();q('#drive-dialog').close();status('설정 저장 완료 · 아직 전송 전입니다. 연결 확인 또는 전송해 주세요.');}catch(e){q('#drive-config-status').textContent=e.message;}});
-  q('#drive-test').addEventListener('click',async()=>{q('#drive-test').disabled=true;try{await request(readConfig(),'ping');q('#drive-config-status').textContent='연결 확인 성공 · 설정 저장을 눌러 주세요.';}catch(e){q('#drive-config-status').textContent=e.message;}finally{q('#drive-test').disabled=false;}});
+  q('#drive-test').addEventListener('click',async()=>{q('#drive-test').disabled=true;try{const health=await request(readConfig(),'ping');q('#drive-config-status').textContent=health.sourceError?'시트 접근은 정상이나 원본 오류가 있습니다: '+health.sourceError:health.resetAvailable?`시트 접근·일지 원본 읽기 정상${health.missing?.length?' · 누락 탭: '+health.missing.join(', ')+' (전체 전송 시 재생성)':''} · 설정 저장을 눌러 주세요.`:'연결 응답 정상 · 시트 점검·초기화를 사용하려면 최신 Apps Script로 배포를 갱신하세요.';}catch(e){q('#drive-config-status').textContent=e.message;}finally{q('#drive-test').disabled=false;}});
   q('#drive-auto').addEventListener('change',()=>{try{config.auto=q('#drive-auto').checked;localStorage.setItem(configKey,JSON.stringify(config));if(config.auto){if(!config.url)openSettings();else send();}else {clearTimeout(timer);status('자동 전송 꺼짐 · 기기 자동 저장 유지');}}catch{status('자동 전송 설정을 저장하지 못했습니다.',true);}});
   q('#drive-send').addEventListener('click',send);
   window.addEventListener('online',()=>{if(config.auto)send();});
   window.JournalStore={list:()=>JSON.parse(JSON.stringify(Object.values(records))),flush:save,open(date){q('#journal-date').value=date;q('#journal-date').dispatchEvent(new Event('change'));}};
+  q('#reset-open').addEventListener('click',()=>{
+    q('#reset-confirm').value='';q('#reset-status').textContent='';
+    q('#reset-cloud').checked=!!config.url;q('#reset-cloud').disabled=!config.url;
+    window.SJDialogs.open(q('#reset-dialog'));
+  });
+  q('#reset-close').addEventListener('click',()=>q('#reset-dialog').close());
+  q('#reset-run').addEventListener('click',async()=>{
+    const message=q('#reset-status');
+    if(q('#reset-confirm').value.trim()!=='초기화'){message.textContent='확인 문구에 초기화를 입력해 주세요.';return;}
+    if(busy){message.textContent='전송이 진행 중입니다. 완료된 후 다시 눌러 주세요.';return;}
+    if(!save()){message.textContent='기기 저장 상태를 먼저 확인해 주세요.';return;}
+    clearTimeout(timer);queued=false;busy=true;restoring=true;form.inert=true;
+    config.auto=false;applyConfig();
+    q('#reset-run').disabled=true;q('#reset-close').disabled=true;q('#drive-send').disabled=true;
+    const resetCloud=q('#reset-cloud').checked;
+    const resetId=q('#reset-run').dataset.resetId||crypto.randomUUID();q('#reset-run').dataset.resetId=resetId;
+    try{
+      localStorage.setItem(configKey,JSON.stringify(config));window.WeatherStore.pause();
+      const weather=await window.WeatherStore.exportAll();
+      const backup={app:'sj-journal-backup',version:1,exportedAt:new Date().toISOString(),journals:Object.values(records),weather};
+      const url=URL.createObjectURL(new Blob([JSON.stringify(backup,null,2)],{type:'application/json'}));
+      const link=document.createElement('a');link.href=url;link.download=`SJ-초기화전백업-${resetId}.json`;link.click();setTimeout(()=>URL.revokeObjectURL(url),10000);
+      if(resetCloud){
+        message.textContent='Google 기록을 백업 탭으로 보관하고 빈 보고서를 만드는 중입니다…';
+        const health=await request(config,'ping');if(!health.resetAvailable)throw new Error('최신 Apps Script로 기존 배포를 새 버전으로 갱신해 주세요.');
+        const result=await request(config,'reset',{resetId,confirmation:'초기화'});
+        if(result.resetId!==resetId)throw new Error('Google 초기화 완료 응답을 확인하지 못했습니다.');
+      }
+      await window.WeatherStore.clear();
+      records={};persist();restore(selected);
+      window.SJNavigation.open('today');
+      message.textContent='초기화 완료 · 연결 설정 유지 · 자동 전송 꺼짐 · 새 날씨는 새로 불러오기로 수집하세요.';
+      status(message.textContent);q('#weather-cloud-status').textContent='초기화 후 미전송';q('#important-cloud-status').textContent='초기화 후 미전송';
+      delete q('#reset-run').dataset.resetId;q('#reset-confirm').value='';
+    }catch(e){message.textContent=`초기화 미완료: ${e.message} 자동 전송은 꺼져 있습니다. 백업을 보관하고 다시 확인해 주세요.`;status(message.textContent,true);}
+    finally{restoring=false;form.inert=false;busy=false;q('#reset-run').disabled=false;q('#reset-close').disabled=false;q('#drive-send').disabled=false;}
+  });
   restore(selected);applyConfig();status(config.url?'연결 설정 있음 · 전송 대기 / 마지막 상태는 전송 후 확인':'연결 설정이 필요합니다 · 기기 자동 저장');
-  if(config.auto&&config.url)setTimeout(send,1500);
+  if(config.auto&&config.url)timer=setTimeout(send,1500);
 })();
 
 ;
