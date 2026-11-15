@@ -1,0 +1,981 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#174c3c">
+  <meta name="description" content="성장·태동 도장 작업과 환경을 기록하는 현장일지">
+  <title>SJ 현장일지</title>
+  <style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;450;500;600;650;700;750;800&display=swap');
+:root{font-family:'Noto Sans KR',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#253c34;background:#f5f6f3;font-synthesis:none;--green:#174c3c;--muted:#7b8780;--line:#e5e9e3}*{box-sizing:border-box}body{margin:0}button,input,textarea{font:inherit}button,a,input,textarea{-webkit-tap-highlight-color:transparent}button{cursor:pointer}button:disabled{cursor:default}a{color:inherit;text-decoration:none}button:focus-visible,a:focus-visible{outline:3px solid #82b7a4;outline-offset:3px}input:focus,textarea:focus{outline:2px solid #82b7a4;outline-offset:1px}.sidebar{position:fixed;inset:0 auto 0 0;width:244px;background:#fff;border-right:1px solid var(--line);padding:38px 23px;display:flex;flex-direction:column}.brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:23px;letter-spacing:-1px}.brand-icon{display:grid;place-items:center;border-radius:12px;width:39px;height:43px;background:var(--green);color:white;font-size:27px}.brand small{display:block;font-size:10px;letter-spacing:0;font-weight:400;margin-top:5px;color:var(--muted)}.workspace-label{font-size:11px;color:#97a098;margin:52px 13px 14px}nav{display:grid;gap:7px}.nav-item{border:0;background:none;display:flex;align-items:center;gap:12px;width:100%;padding:14px 15px;font-size:13px;color:#7c877f;border-radius:8px;text-align:left}.nav-item>span:first-child{font-size:21px;line-height:1}.nav-item.active{background:#eaf1eb;color:var(--green);font-weight:700}.nav-item small{margin-left:auto;font-size:9px;color:#9ba39c}.nav-dot{margin-left:auto;border-radius:50%;width:5px;height:5px;background:var(--green)}.sidebar-note{margin-top:auto;padding:21px 15px;background:#f6f7f1;border-radius:10px}.note-symbol{display:block;font-size:25px;color:#7b9270;margin-bottom:10px}.sidebar-note strong{font-size:13px;line-height:1.9;font-weight:600}.sidebar-note p{font-size:10px;color:var(--muted);line-height:1.9;margin:10px 0 0}.sidebar-footer{display:flex;align-items:center;gap:6px;font-size:9px;color:var(--muted);margin-top:26px}.sidebar-footer>span:last-child{margin-left:auto}.status-dot{display:inline-block;width:6px;height:6px;background:#88a484;border-radius:50%;flex-shrink:0}.main-shell{margin-left:244px}.topbar{height:74px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;padding:0 48px;font-size:11px;color:var(--muted);background:#ffffff60}.topbar strong{font-weight:500;color:#4d5c53}.crumb{margin:0 16px;color:#c9cfc7}.preview-badge{display:flex;align-items:center;gap:6px;padding:7px 11px;border:1px solid #dde5da;border-radius:30px;font-size:10px}.preview-badge i{height:5px;width:5px;border-radius:50%;background:#88a484}main{max-width:1140px;margin:0 auto;padding:42px 48px 0}.page-heading{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px}.eyebrow{font-size:10px;font-weight:700;letter-spacing:2px;color:#8a977d}h1{font-size:29px;font-weight:750;letter-spacing:-1.6px;margin:9px 0}h1 span{color:#7f9c6b}.page-heading p{font-size:12px;color:var(--muted);margin:0}.heading-stamp{border:1px solid #ced8c7;color:#97a58a;transform:rotate(-7deg);font-size:15px;letter-spacing:4px;padding:9px 12px;text-align:center}.heading-stamp span{display:block;font-size:7px;letter-spacing:2px;margin-top:3px}.preview-notice{display:flex;align-items:center;gap:10px;font-size:11px;line-height:1.8;color:#7a8065;background:#f0f0e6;border:1px solid #e6e6d8;border-radius:8px;padding:11px 15px;margin-bottom:22px}.preview-notice>span{font-size:17px}.preview-notice strong{font-weight:600}form{display:grid;gap:19px}.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px;box-shadow:0 2px 3px #253c3402}.date-card{display:flex;align-items:center;gap:12px;padding:20px 24px}.date-summary{display:flex;align-items:center;gap:14px;margin-right:auto}.calendar-icon{display:grid;place-items:center;width:43px;height:46px;background:#f0f4ed;border-radius:10px;color:#5f7a4e;font-size:22px}.section-kicker{font-size:10px;color:var(--muted)}h2{margin:0;font-size:15px;letter-spacing:-.4px;font-weight:700}.date-summary h2{font-size:20px;margin-top:4px;letter-spacing:-.7px}.date-summary h2 small{font-weight:400;color:var(--muted);font-size:13px;margin-left:8px}.date-input-label input{width:148px;font-size:12px}.outline-button{background:white;border:1px solid #dfe5dc;color:#607055;font-size:11px;border-radius:7px;padding:11px 13px;min-height:42px}.section-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:19px}.section-title{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:22px}.section-title>div{display:flex;gap:10px;align-items:center}.section-number{color:#91a487;font-size:10px;font-weight:600}.muted{font-size:10px;color:#90988e}.small-icon{font-size:21px;color:#9da998}.weather-fields{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.weather-slot{min-width:0}.weather-slot>span{display:block;font-size:10px;color:var(--muted);margin:0 0 7px 3px}.weather-select{position:relative;width:100%;border:1px solid #e2e8dd;border-radius:9px;background:#f7f9f3;padding:11px 0;display:grid;justify-items:center;gap:5px;color:#40563b;font-size:11px;min-height:77px}.weather-select .weather-icon{font-size:24px;line-height:1.2;color:#a7a989}.weather-select[data-weather="맑음"] .weather-icon{color:#c69d50}.weather-select[data-weather="비"] .weather-icon{color:#6e90a7}.weather-select[data-weather="흐림"] .weather-icon{color:#939f9a}.weather-menu{position:absolute;display:grid;background:white;border:1px solid var(--line);border-radius:9px;z-index:2;box-shadow:0 5px 20px #153b3420;padding:4px;min-width:90px}.weather-menu button{border:0;background:white;padding:9px;color:#425547;font-size:12px;border-radius:5px}.weather-menu button:hover{background:#edf3e9}.time-fields{display:flex;align-items:flex-end;gap:9px}.time-fields label{flex:1;min-width:0;font-size:10px;color:var(--muted)}input,textarea{width:100%;border:1px solid #e1e6de;border-radius:7px;padding:11px 12px;background:#fcfdfb;color:#344b3f;min-height:43px;font-size:12px}input::placeholder,textarea::placeholder{color:#a3aaa0;font-size:11px}.time-fields input{margin-top:8px;padding:10px 8px}.time-dash{margin-bottom:13px;color:#adb5a6}.field-hint{font-size:10px;color:#9ba394;margin:13px 0 0}.environment-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.environment-area+.environment-area{border-left:1px solid var(--line);padding-left:22px}.area-label{display:flex;gap:8px;align-items:center;font-size:12px;font-weight:700;margin-bottom:13px}.area-mark{height:7px;width:7px;border-radius:2px;background:#79916c}.area-mark.blue{background:#8298a2}.measurement-row{display:flex;align-items:center;gap:9px;margin-top:9px}.measurement-row>.period{font-size:10px;color:var(--muted);width:29px;flex-shrink:0}.unit-input{position:relative;display:block;flex:1;min-width:0}.unit-input input{padding-right:31px}.unit-input>span{position:absolute;right:12px;top:14px;font-size:10px;color:#8a9585}.work-area+.work-area{margin-top:24px;padding-top:24px;border-top:1px solid var(--line)}.work-area-heading{display:flex;justify-content:space-between;align-items:center;margin-bottom:13px}.work-area-heading .area-label{margin:0}.work-area-heading>span{font-size:10px;color:#949d90}.work-entry{background:#f8f9f5;border:1px solid #e7eadd;border-radius:9px;padding:16px;margin-bottom:12px}.work-entry-top{display:flex;gap:11px;align-items:flex-end}.input-field{display:block;flex:1;min-width:0}.input-field>span{display:block;font-size:10px;color:#7b8873;margin-bottom:7px}.icon-button{flex-shrink:0;width:38px;height:43px;background:none;border:1px solid #e4e8de;color:#9ba491;border-radius:7px;font-size:20px}.icon-button:hover{color:#a44939;background:#fff5f1}.stage-row{display:flex;gap:12px;align-items:center;margin-top:15px}.stage-row>span{font-size:10px;color:#7b8873;width:29px}.stage-options{display:flex;gap:7px}.stage-button{border:1px solid #dce3d5;border-radius:6px;background:white;font-size:11px;padding:8px 20px;color:#8a9582;min-height:36px}.stage-button[aria-pressed="true"]{border-color:#32624b;background:#eaf1e5;color:#275139;font-weight:600}.dryer-row{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-top:13px}.check-label{display:flex;align-items:center;gap:7px;font-size:11px;color:#637358;min-height:36px}.check-label input{width:15px;height:15px;min-height:0;accent-color:var(--green);margin:0}.dryer-duration{display:flex;align-items:center;gap:8px;font-size:10px;color:#8c9983}.dryer-duration input{width:80px;min-height:35px;padding:7px 10px}.dryer-duration[hidden]{display:none}.work-memo{margin-top:12px;background:white;min-height:38px;padding:9px 12px}.add-button{width:100%;border:1px dashed #cfd9c7;border-radius:7px;background:#fff;color:#6a805b;font-size:11px;padding:10px;min-height:40px}.add-button:hover{background:#f1f6ed}.supplies-grid{grid-template-columns:1fr 1fr}.item-entry{display:grid;grid-template-columns:1fr 1.3fr 32px;gap:7px;margin-bottom:10px}.item-entry input{padding:10px;min-width:0}.item-entry .icon-button{width:32px}textarea{resize:vertical;line-height:1.9;min-height:110px}.notes-bottom{display:flex;justify-content:space-between;gap:10px;font-size:10px;color:#9aa391;margin-top:10px}.form-footer{display:flex;align-items:center;justify-content:space-between;padding:3px 0 12px;gap:12px}.form-footer>span{display:flex;align-items:center;gap:7px;font-size:10px;color:#85937b}.primary-button{border:0;border-radius:8px;background:var(--green);color:white;padding:13px 21px;font-size:12px;min-height:45px}.primary-button:hover{background:#22634d}.primary-button span{margin-left:22px}.page-footer{border-top:1px solid var(--line);padding:24px 0 30px;font-size:10px;color:#95a08b}.page-footer span{float:right;font-size:9px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}dialog{border:1px solid var(--line);border-radius:16px;padding:26px;width:min(620px,calc(100% - 28px));max-height:85vh;color:#253c34}dialog::backdrop{background:#18352cb3;backdrop-filter:blur(3px)}.dialog-heading{display:flex;justify-content:space-between;align-items:center}.dialog-heading h2{font-size:23px;margin-top:6px}.dialog-notice{background:#f4f3e7;color:#787c5c;font-size:11px;line-height:1.8;padding:11px;border-radius:7px}pre{font-family:inherit;font-size:12px;line-height:1.9;white-space:pre-wrap;overflow-wrap:anywhere;background:#f7f9f4;border-radius:8px;padding:18px;max-height:48vh;overflow:auto}
+@media(min-width:1500px){main{padding-top:52px}.sidebar{width:264px}.main-shell{margin-left:264px}}
+@media(max-width:1100px){.sidebar{width:205px;padding:30px 16px}.main-shell{margin-left:205px}main{padding:30px 25px 0}.topbar{padding:0 25px}.section-grid{grid-template-columns:1fr}.supplies-grid{grid-template-columns:1fr 1fr}.heading-stamp{display:none}h1{font-size:25px}.card{padding:20px}.date-summary h2{font-size:18px}.date-input-label input{width:137px}}
+@media(max-width:700px){.sidebar{position:static;width:100%;padding:18px 20px;border-right:0;border-bottom:1px solid var(--line)}.brand{font-size:20px}.brand small{font-size:9px}.brand-icon{width:34px;height:38px}.workspace-label,.sidebar nav,.sidebar-note,.sidebar-footer{display:none}.main-shell{margin-left:0}.topbar{height:44px;padding:0 20px;font-size:10px}.preview-badge{font-size:9px;padding:5px 8px}main{padding:25px 16px 0}.page-heading{margin-bottom:20px}h1{font-size:24px;letter-spacing:-1.3px}.page-heading p{font-size:11px}.eyebrow{font-size:9px}.preview-notice{font-size:10px;align-items:flex-start;margin-bottom:17px}.preview-notice strong{display:block}.card{padding:18px 16px;border-radius:11px}form{gap:15px}.date-card{gap:8px;flex-wrap:wrap}.date-summary{width:100%;margin-bottom:6px}.date-summary h2{font-size:21px}.date-input-label{flex:1}.date-input-label input{width:100%}.outline-button{min-width:70px}.section-grid{gap:15px}.section-title{margin-bottom:18px}.muted{font-size:9px}.environment-grid{grid-template-columns:1fr;gap:20px}.environment-area+.environment-area{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:18px}.measurement-row{gap:12px}.measurement-row>.period{width:32px}.supplies-grid{grid-template-columns:1fr}.work-entry{padding:13px 11px}.work-entry-top{flex-wrap:wrap;gap:9px}.work-entry-top .input-field{flex-basis:calc(50% - 30px)}.stage-button{padding:8px 19px;min-height:40px}.stage-row{gap:8px}.icon-button{min-height:43px}.notes-bottom{font-size:9px}.form-footer{align-items:stretch;flex-direction:column;gap:14px;padding:5px 0 14px}.form-footer>span{justify-content:center}.primary-button{width:100%;min-height:49px}.page-footer{font-size:9px;padding-top:20px}.page-footer span{font-size:8px}.weather-select{min-height:80px}.input-field>span,.check-label{font-size:11px}input,textarea{font-size:16px}input::placeholder,textarea::placeholder{font-size:11px}.time-fields input{font-size:16px}.date-input-label input{font-size:14px}}
+@media(prefers-reduced-motion:no-preference){button{transition:background .15s,border-color .15s}dialog[open]{animation:appear .18s ease-out}@keyframes appear{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}}
+[hidden]{display:none!important}.mobile-tabs{display:flex;gap:8px;margin-bottom:24px}.mobile-tabs button{border:1px solid #dbe3d5;background:#fff;color:#697b60;padding:11px 18px;border-radius:8px;font-size:12px;min-height:44px}.mobile-tabs button[aria-pressed="true"]{background:#174c3c;border-color:#174c3c;color:#fff}.auto-label{background:#edf3e7;color:#527445;border-radius:30px;padding:5px 9px;font-size:9px;white-space:nowrap}.weather-mini{display:flex;align-items:center;flex-direction:column;text-align:center;border:1px solid #e3e9dd;background:#f8faf5;border-radius:9px;padding:10px 4px;gap:9px;min-width:0}.mini-range{font-size:9px;color:#87947e;white-space:nowrap}.mini-icon{font-size:26px;color:#ba9752;font-weight:400}.mini-condition{font-size:10px;line-height:1.7}.weather-detail-link{border:0;background:none;color:#507a53;font-size:11px;padding:9px 0 0;min-height:35px}.weather-heading{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}.weather-heading p{font-size:12px;color:#7b8780}.location-chip{font-size:12px;color:#55744a;border:1px solid #dce5d5;padding:10px 16px;border-radius:30px;white-space:nowrap}.weather-controls{display:flex;align-items:flex-end;gap:12px}.weather-controls label{font-size:11px;color:#72826a;flex:1}.weather-controls input{display:block;margin-top:8px;max-width:220px}.weather-controls .primary-button{width:auto}.weather-status{font-size:12px;line-height:1.9;color:#5b7953;margin:18px 0;padding:12px 16px;border:1px solid #dce6d6;background:#edf3e8;border-radius:8px}.weather-status.error{color:#986543;border-color:#e8d9c7;background:#faf4e9}#weather-panel>.card{margin-bottom:20px}.weather-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.flow-card{display:flex;align-items:center;flex-direction:column;padding:20px 8px;background:#f6f8f2;border:1px solid #e4e9dd;border-radius:10px;text-align:center}.flow-period{color:#819275;font-size:10px}.flow-range{font-size:12px;color:#44613b;margin-top:8px}.flow-icon{font-size:38px;color:#b69c59;margin:18px 0 10px}.flow-card h3{font-size:13px;font-weight:600;margin:0;min-height:42px}.flow-stats{border-top:1px solid #e2e8d9;padding-top:12px;display:grid;gap:7px;font-size:10px;color:#7d8a74;width:100%}.hourly-scroll{overflow-x:auto}.hourly-table{border-collapse:collapse;width:100%;font-size:12px;text-align:left}.hourly-table th{font-weight:500;font-size:11px;color:#849278;background:#f7f9f3}.hourly-table td,.hourly-table th{padding:12px 10px;border-bottom:1px solid #edf0e8;white-space:nowrap}.hourly-table td:first-child{color:#859578}.weather-history{display:grid;gap:9px}.weather-history-row{width:100%;border:1px solid #e5eadd;background:#fbfcf8;border-radius:8px;display:grid;grid-template-columns:100px 1fr;gap:8px;text-align:left;padding:14px;color:#4f6c45;font-size:11px}.weather-history-row small{grid-column:1/-1;color:#97a18d;font-size:9px}.weather-history-row:hover{background:#edf3e6}.weather-source{font-size:10px;color:#87947b;line-height:1.9;margin:24px 0}.weather-source a{text-decoration:underline}.primary-button:disabled{opacity:.55;cursor:wait}
+@media(max-width:700px){.mobile-tabs{margin-bottom:20px}.mobile-tabs button{flex:1}.weather-heading h1{font-size:23px}.weather-heading p{font-size:10px}.location-chip{display:none}.weather-controls{flex-wrap:wrap;gap:9px}.weather-controls label{flex-basis:65%}.weather-controls input{max-width:none}.weather-controls .primary-button{width:100%;margin-top:2px}.weather-flow{grid-template-columns:1fr 1fr;gap:10px}.flow-card{padding:18px 10px}.flow-card h3{min-height:36px;font-size:12px}.flow-stats{font-size:11px}.hourly-table td,.hourly-table th{padding:11px 8px;font-size:11px}.weather-history-row{grid-template-columns:1fr}.weather-source{font-size:10px}.weather-fields{gap:5px}.mini-range{font-size:8px}.mini-condition{font-size:9px}}
+.memo-input-row{display:flex;align-items:flex-start;gap:9px;margin-top:12px}.memo-input-row .work-memo{margin-top:0;flex:1;min-width:0}.voice-button{flex-shrink:0;border:1px solid #ccdac5;border-radius:7px;background:#edf3e7;color:#446a38;padding:9px 12px;font-size:11px;min-height:38px}.voice-button[aria-pressed="true"]{background:#a54e3d;border-color:#a54e3d;color:white}.voice-button:disabled{opacity:.65;cursor:default}.voice-status{font-size:10px;color:#839075;line-height:1.8;margin:9px 0 0}.work-memo:read-only{background:#f1f4eb}@media(max-width:700px){.memo-input-row{flex-wrap:wrap}.memo-input-row .work-memo{flex-basis:100%}.voice-button{min-height:44px}.voice-status{font-size:10px}}
+
+.section-grid.single-card-grid{grid-template-columns:1fr}
+
+/* Unified header and navigation */
+.main-shell{margin-left:0}.sj-header{max-width:1140px;margin:0 auto;height:90px;background:transparent}.sj-header .brand{font-size:24px}.sj-tabs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.sj-tabs button{display:flex;justify-content:center;align-items:center;gap:7px;padding:14px 8px;min-height:52px}.sj-tabs button>span{font-size:19px}.sj-tabs small{font-size:9px;color:#9ba58e}.sj-tabs button:disabled{color:#919b89;background:#f5f7f1;border-color:#e2e7db;cursor:default}.sj-header+.main{padding-top:24px}@media(max-width:700px){.sj-header{height:80px;padding:0 16px}.sj-header .brand{font-size:21px}.sj-tabs{gap:5px}.sj-tabs button{flex-direction:column;gap:5px;font-size:10px;padding:10px 2px;min-width:0}.sj-tabs button>span{font-size:21px}.sj-tabs small{font-size:8px}.sj-header .preview-badge{font-size:8px}.sj-header .brand-icon{width:32px;height:36px}}
+
+/* Mobile-only layout at every screen width */
+body{background:#e9ede7}.main-shell{width:100%;max-width:480px;margin:0 auto;background:#f5f6f3;min-height:100vh;box-shadow:0 0 32px #253c3409}.main-shell main{padding:20px 16px 0;max-width:none}.sj-header{height:80px;padding:0 16px}.sj-header .brand{font-size:21px}.sj-header .brand-icon{width:32px;height:36px}.sj-header .preview-badge{font-size:8px}.sj-tabs{gap:5px;margin-bottom:20px}.sj-tabs button{flex-direction:column;gap:5px;font-size:10px;padding:10px 2px;min-width:0;min-height:65px}.sj-tabs button>span{font-size:21px}.sj-tabs small{font-size:8px}.section-grid,.supplies-grid,.environment-grid{grid-template-columns:1fr;gap:15px}.environment-area+.environment-area{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:18px}.card{padding:18px 16px;border-radius:11px}form{gap:15px}.date-card{gap:8px;flex-wrap:wrap}.date-summary{width:100%;margin-bottom:6px}.date-summary h2{font-size:21px}.date-input-label{flex:1}.date-input-label input{width:100%;font-size:14px}.outline-button{min-width:70px}.section-title{margin-bottom:18px}.muted{font-size:9px}input,textarea,.time-fields input{font-size:16px}.work-entry{padding:13px 11px}.work-entry-top{flex-wrap:wrap;gap:9px}.work-entry-top .input-field{flex-basis:calc(50% - 30px)}.stage-button{padding:8px 19px;min-height:44px}.memo-input-row{flex-wrap:wrap}.memo-input-row .work-memo{flex-basis:100%}.voice-button{min-height:44px}.form-footer{align-items:stretch;flex-direction:column;gap:14px}.form-footer>span{justify-content:center}.primary-button{width:100%;min-height:49px}.weather-flow{grid-template-columns:1fr 1fr;gap:10px}.weather-heading h1{font-size:23px}.weather-heading p{font-size:10px}.location-chip{display:none}.weather-controls{flex-wrap:wrap;gap:9px}.weather-controls label{flex-basis:65%}.weather-controls input{max-width:none}.weather-controls .primary-button{width:100%;margin-top:2px}.weather-history-row{grid-template-columns:1fr}.page-footer{font-size:9px}.page-footer span{font-size:8px}
+.drive-bar{background:#eef3e9;border:1px solid #d8e2d0;border-radius:12px;padding:14px;margin-bottom:18px}.drive-title{display:flex;gap:8px;align-items:center;font-size:12px}.drive-title>span{color:#a1a993}.drive-title label{display:flex;gap:5px;align-items:center;margin-left:auto;font-size:11px;color:#64785a}.drive-title input{width:15px;min-height:15px;margin:0;accent-color:#174c3c}.drive-bar p{font-size:10px;line-height:1.8;color:#708264;margin:7px 0 10px;overflow-wrap:anywhere}.drive-actions{display:flex;gap:7px;flex-wrap:wrap}.drive-actions button,.drive-actions a{border:1px solid #cedcc5;border-radius:7px;background:white;color:#426536;padding:10px;font-size:11px;min-height:42px;display:inline-flex;align-items:center;justify-content:center}.drive-actions #drive-send,.drive-actions button[type="submit"]{background:#174c3c;color:white;border-color:#174c3c}.drive-actions button:disabled{opacity:.5;cursor:wait}#drive-dialog{max-width:460px}#drive-dialog h2{font-size:18px}#drive-config{gap:14px;margin:20px 0}#drive-config label{display:grid;gap:7px;font-size:12px}#drive-config input{font-size:13px}#drive-config-status{font-size:11px;color:#6d795b;line-height:1.8;margin:0}#drive-dialog details{font-size:11px;line-height:1.9;background:#f0f4ea;padding:12px;border-radius:8px}#drive-dialog ol{padding-left:18px}#drive-dialog li{margin:8px 0}
+.calendar-controls{display:flex;gap:8px;align-items:center;justify-content:space-between;margin-bottom:18px}.calendar-controls button{background:#f1f5eb;border:1px solid #dbe4d3;border-radius:7px;color:#426139;min-width:40px;min-height:44px;font-size:13px}.calendar-controls h2{font-size:16px}.calendar-week,.journal-calendar{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px}.calendar-week{text-align:center;font-size:11px;color:#88977e;margin-bottom:8px}.calendar-week span:first-child{color:#ba7567}.calendar-day{display:flex;flex-direction:column;gap:3px;align-items:center;justify-content:center;min-height:49px;border:1px solid transparent;border-radius:8px;background:transparent;color:#66785b;font-size:13px}.calendar-day:hover{background:#edf3e5}.calendar-day.has-journal{background:#edf3e5;color:#31572a}.calendar-day.is-today{border-color:#547c47;font-weight:700}.calendar-dot{font-size:7px;height:10px;color:#7c9c61}.journal-list-card{margin-top:16px}.journal-list-entry{display:flex;flex-direction:column;width:100%;text-align:left;gap:7px;background:#f8faf4;border:1px solid #e0e8d7;border-radius:9px;padding:14px;margin-top:10px;color:#45623b;overflow-wrap:anywhere}.journal-list-entry strong{font-size:13px}.journal-list-entry span{font-size:11px}.journal-list-entry small{font-size:10px;color:#859179}.sj-tabs button[data-view="journals"]{font-size:9px}
+.equipment-plus{border:1px solid #cdddc4;background:#edf4e6;color:#416e35;border-radius:9px;width:44px;height:44px;font-size:25px}.equipment-picker{padding:12px;background:#eff5e9;border:1px solid #dce7d2;border-radius:9px;margin-bottom:14px}.equipment-picker>span{font-size:11px;color:#748768}.equipment-picker>div{display:flex;gap:7px;margin-top:10px}.equipment-picker button{flex:1;border:1px solid #d4e1c9;border-radius:7px;background:#fff;color:#4c7140;font:inherit;font-size:12px;min-height:44px}.equipment-entry{border:1px solid #e2e8dc;border-radius:9px;background:#fafcf7;padding:13px;margin-bottom:12px}.equipment-entry-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}.equipment-entry-title select{font:inherit;font-size:14px;background:#fff;border:1px solid #dae4d1;border-radius:7px;padding:9px 12px;min-height:44px;color:#426239}.equipment-entry-title .icon-button{width:36px}
+.quick-environment{display:grid;grid-template-columns:32px minmax(0,1fr) minmax(0,1fr);gap:10px;align-items:start;margin-top:17px}.quick-environment>.period{padding-top:15px}.quick-environment .unit-input>span{top:14px}.measurement-adjust{display:flex;gap:6px;margin-top:7px}.measurement-adjust button{flex:1;min-height:40px;border:1px solid #dbe5d2;background:#f3f7ee;border-radius:7px;font-size:20px;color:#587947}.environment-quick-panel{grid-column:1/-1;min-width:0}.environment-prior{font-size:11px;line-height:1.9;color:#7b8b6d;margin:0 0 9px}.reuse-measurement{min-height:44px;border:1px solid #cbdcbe;background:#edf5e6;border-radius:7px;color:#426637;padding:10px;font:inherit;font-size:11px}.reuse-measurement:disabled{opacity:.5;cursor:default}.environment-feedback{font-size:11px;line-height:1.8;color:#638050;margin:8px 0}.environment-feedback:empty{display:none}.environment-speech{margin-top:12px;padding-top:12px;border-top:1px solid #e9ede3}.environment-speech-actions{display:flex;gap:8px;align-items:center;margin-top:8px}.environment-transcript{font-size:14px}.quick-environment+.quick-environment{border-top:1px solid #edf0e8;padding-top:17px}
+
+.compact-environment{display:grid;grid-template-columns:32px minmax(0,1fr) minmax(0,1fr);align-items:center;gap:9px;margin-top:12px}.compact-environment-voice{grid-column:2/-1;min-width:0}.compact-environment-voice .voice-button{min-height:36px;padding:7px 12px;font-size:10px}.compact-environment-voice .voice-status{margin:7px 0;font-size:10px;line-height:1.7}
+.number-voice-field{align-self:flex-start}.number-voice-field>.input-field{display:block}.number-voice{margin-top:7px}.number-voice .voice-button{min-height:36px;font-size:10px;padding:7px 10px}.number-voice .voice-status{font-size:10px;line-height:1.7}.work-entry-top{align-items:flex-start}
+.item-entry{align-items:start}.item-voice-field{min-width:0}.item-voice-field input{width:100%}.item-voice-field .voice-button{min-height:36px;font-size:10px;padding:7px 8px}.item-voice-field .voice-status{overflow-wrap:anywhere}
+.important-check{display:inline-flex;gap:6px;align-items:center;font-size:12px;color:#a96e24;white-space:nowrap}.important-check input{width:17px;height:17px;min-height:0;margin:0;accent-color:#ab782b}.important-check small{font-size:9px;color:#959b87}.important-toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}.important-toolbar button{font:inherit;font-size:10px;min-height:42px;padding:8px;border:1px solid #e0d4b9;border-radius:8px;background:#fbf5e7;color:#9a7135}.calendar-day.is-important{background:#fff2d5;color:#9b681e}.calendar-day.is-important .calendar-dot{color:#b68125}.important-entry{border-color:#e4cc9d;background:#fffaf0}.important-badge{color:#b27b21!important;font-size:11px!important}
+
+/* Text-only main navigation */
+.sj-tabs button,.sj-tabs button[data-view="journals"]{font-size:14px;font-weight:600;line-height:1.5;min-height:65px;padding:10px 3px;word-break:keep-all;gap:4px}.sj-tabs small{font-size:10px;font-weight:400}
+
+/* Date controls sit beside the date heading. */
+.date-card{display:grid;grid-template-columns:minmax(0,1fr) 40px 54px;gap:7px;align-items:center}.date-card .date-summary{width:auto;margin:0;min-width:0}.date-card .date-summary h2{font-size:18px;line-height:1.6;margin:0;word-break:keep-all;letter-spacing:-.8px}.date-card .date-input-label{position:relative;display:grid;place-items:center;width:40px;height:44px;flex:none;border:1px solid #dfe5dc;border-radius:7px;background:#fcfdfb;color:#52664a;overflow:hidden}.date-card .date-input-label:focus-within{outline:2px solid #82b7a4;outline-offset:2px}.date-card .date-input-label input{position:absolute;inset:0;width:100%;height:100%;padding:0;border:0;opacity:0;cursor:pointer}.date-card .date-input-label input::-webkit-calendar-picker-indicator{position:absolute;inset:0;width:100%;height:100%;margin:0;cursor:pointer}.date-card #today-button{min-width:0;width:54px;padding:8px 3px;min-height:44px}
+
+/* Compact Drive controls in the app header. */
+.sj-header{display:flex;gap:8px;padding:12px;min-height:80px;height:auto;flex-wrap:wrap}.sj-header .brand{font-size:18px;gap:7px;letter-spacing:-.8px;margin-right:auto}.sj-header .brand-icon{width:29px;height:34px;font-size:24px}.header-drive-actions .drive-actions{gap:5px;flex-wrap:nowrap}.header-drive-actions .drive-actions button,.header-drive-actions .drive-actions a{font-size:10px;padding:8px 6px;min-height:38px;white-space:nowrap}.header-auto{display:flex;align-items:center;gap:4px;white-space:nowrap;font-size:10px;color:#6b7d60}.header-auto input{width:15px;height:15px;min-height:0;margin:0;accent-color:#174c3c}.header-drive-actions #drive-sheet{font-size:9px}@media(max-width:380px){.sj-header{gap:5px}.sj-header .brand{font-size:16px;gap:5px}.header-drive-actions .drive-actions button{font-size:9px;padding:8px 5px}.header-auto{font-size:9px}}
+.weather-save-actions{display:flex;gap:6px}.weather-save-actions .outline-button{min-width:0;padding:8px;font-size:10px}
+.important-export-actions{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end}.important-toolbar{align-items:flex-start}.important-export-actions button{font-size:9px;min-height:40px}
+.search-form{gap:14px}.search-form>label{font-size:12px;color:#667e58}.search-query-row{display:flex;gap:8px}.search-query-row input{min-width:0;flex:1}.search-query-row .primary-button{width:auto;padding:10px 16px}.search-filter-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px 9px}.search-filter-grid label{display:grid;gap:7px;min-width:0;font-size:11px;color:#819471}.search-filter-grid select{width:100%;min-width:0;min-height:44px;padding:9px 7px;border:1px solid #dee7d5;border-radius:7px;background:#fcfdf9;color:#4f6b43;font:inherit;font-size:13px}.search-filter-grid input{min-width:0;padding:9px 6px;font-size:13px}.search-bottom{display:flex;align-items:center;justify-content:space-between}.search-group{margin:16px 0}.search-group h3{font-size:15px;margin:0 0 12px;color:#3b6032}.search-stage-flow{font-size:11px;color:#839272;line-height:1.9;overflow-wrap:anywhere;padding:10px;background:#f1f6eb;border-radius:7px}.search-entry{display:flex;flex-direction:column;gap:8px;width:100%;padding:14px 0;background:none;text-align:left;border:0;border-top:1px solid #e8eddf;color:#4b6840;font:inherit;font-size:12px;overflow-wrap:anywhere}.search-entry strong{font-size:13px}.search-entry small,.search-match-label{font-size:10px;color:#8d9a7f}.search-memo{white-space:pre-wrap;line-height:1.9}
+
+/* Compact wordmark with author credit. */
+.sj-header .brand{font-size:15px;letter-spacing:-.4px;flex-shrink:0}.brand-wordmark{display:flex;flex-direction:column;gap:4px}.brand-name{font-size:15px;line-height:1.3;font-weight:750}.brand-credit{font-size:11px;line-height:1.3;font-weight:500;letter-spacing:0;color:#2875cf}.header-drive-actions .drive-actions button,.header-drive-actions .drive-actions a{font-size:12px}.header-auto{font-size:11px}@media(max-width:380px){.sj-header .brand,.brand-name{font-size:14px}.brand-credit{font-size:10px}.header-drive-actions .drive-actions button{font-size:11px}.header-auto{font-size:10px}}
+
+/* Increase only the app name by 2px. */
+.brand-name{font-size:17px}@media(max-width:380px){.brand-name{font-size:16px}}
+
+/* App name: black, bold, +3px. */
+.brand-name{color:#000;font-weight:800;font-size:20px}@media(max-width:380px){.brand-name{font-size:19px}}
+.graph-controls{padding:18px 16px}.graph-legend{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0}.graph-legend span{display:flex;align-items:center;gap:6px;font-size:11px;color:#7e8e70}.graph-legend i{display:inline-block;width:8px;height:8px;border-radius:50%}.graph-card{margin:15px 0;padding:18px 12px}.graph-card h3{font-size:14px;margin:0 0 15px;padding:0 4px}.graph-card h3 small{font-size:11px;color:#93a087;font-weight:400}.graph-card svg{width:100%;height:auto;display:block;overflow:visible}.graph-card circle{cursor:pointer}.graph-card circle:focus{outline:2px solid #305d23;outline-offset:2px}.graph-stat{text-align:center;color:#849574;font-size:10px;margin:8px 0 0}.graph-empty{font-size:12px;color:#99a38c;text-align:center;padding:45px 10px;line-height:1.8;background:#f7faf2;border-radius:8px}.graph-data summary{font-size:12px;color:#6e865d;cursor:pointer;min-height:30px}.graph-date-link{font:inherit;font-size:11px;border:0;background:none;color:#4b7654;text-decoration:underline;padding:8px 0;min-height:36px}.graph-data{margin-top:15px}
+
+.sync-status{flex-basis:100%;font-size:10px;line-height:1.7;margin:2px 0 0;color:#718163;overflow-wrap:anywhere}.header-drive-actions #drive-send{min-width:85px}.sync-status:empty{display:none}
+@media(max-width:600px){
+  .main-shell{width:100%;max-width:480px;box-shadow:none}.main-shell main{padding:16px 12px 0}
+  .sj-header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 6px;padding:12px;align-items:center}.sj-header .brand{grid-column:1;grid-row:1;margin:0;min-width:0}.header-drive-actions{grid-column:2;grid-row:1}.header-auto{grid-column:2;grid-row:2;justify-self:end;min-height:30px}.sync-status{grid-column:1;grid-row:2;margin:0;font-size:10px;min-width:0}.header-drive-actions .drive-actions{gap:5px}.header-drive-actions .drive-actions button,.header-drive-actions .drive-actions a{min-height:44px;font-size:11px;padding:9px 7px}
+  .sj-tabs{gap:5px;grid-template-columns:repeat(5,minmax(0,1fr))}.sj-tabs button,.sj-tabs button[data-view="journals"]{font-size:13px;padding:10px 2px;min-height:54px}
+  input,textarea,select{font-size:16px}.card{padding:16px 12px}.date-card{grid-template-columns:minmax(0,1fr) 40px 50px;gap:6px}.date-card .date-summary h2{font-size:17px}.date-card #today-button{width:50px}
+  .time-fields{display:grid;grid-template-columns:minmax(0,1fr) 10px minmax(0,1fr);gap:5px}.time-fields label{min-width:0}.time-fields input{min-width:0;width:100%;padding:10px 5px;font-size:16px}.time-dash{text-align:center}
+  .work-entry-top .input-field{min-width:0}.work-entry-top .number-voice-field{flex-basis:calc(50% - 28px)}.voice-button{min-height:40px}.number-voice .voice-button,.item-voice-field .voice-button{min-height:40px}
+  .item-entry{grid-template-columns:minmax(0,1fr) minmax(0,1fr) 32px;gap:6px}.environment-area+.environment-area{padding-top:16px}.compact-environment{grid-template-columns:26px minmax(0,1fr) minmax(0,1fr);gap:8px}
+  .primary-button,.outline-button{touch-action:manipulation}.section-title .muted{max-width:48%;text-align:right;line-height:1.6}
+}
+.voice-check-info{display:grid;grid-template-columns:100px minmax(0,1fr);gap:10px;font-size:12px;line-height:1.8;margin:22px 0}.voice-check-info dt{color:#829076}.voice-check-info dd{margin:0;overflow-wrap:anywhere}#voice-check-status{color:#597449}#voice-check-open{margin:12px 0}
+</style>
+</head>
+<body>
+  <div class="main-shell" id="today">
+    <header class="topbar sj-header"><a class="brand" href="#today"><span class="brand-wordmark"><span class="brand-name">SJ 현장일지</span><span class="brand-credit">Crafted by Jicho</span></span></a><div class="header-drive-actions"><div class="drive-actions"><button type="button" id="drive-send">☁ 전체 전송</button><button type="button" id="drive-settings">⚙ 설정</button><a id="drive-sheet" hidden target="_blank" rel="noopener">↗ 시트 열기</a></div></div><label class="header-auto"><input type="checkbox" id="drive-auto">자동 전송</label><span id="drive-dot" hidden></span><p id="drive-status" class="sync-status" role="status">연결 설정이 필요합니다 · 기기 자동 저장</p></header>
+    <main>
+
+      <nav class="mobile-tabs sj-tabs" aria-label="주 메뉴">
+        <button type="button" data-view="today" aria-pressed="true">오늘 일지</button>
+        <button type="button" data-view="weather" aria-pressed="false">날씨 기록</button>
+        <button type="button" data-view="journals" aria-pressed="false">일지달력</button>
+        <button type="button" data-view="search" aria-pressed="false">검색</button>
+        <button type="button" data-view="graphs" aria-pressed="false">그래프</button>
+      </nav>
+      <form id="journal-form">
+        <section class="card date-card" aria-labelledby="date-heading"><div class="date-summary"><div><h2 id="date-heading"></h2></div></div><label class="date-input-label" title="일지 날짜 선택"><span class="sr-only">일지 날짜</span><svg class="date-picker-symbol" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></svg><input id="journal-date" type="date" required aria-label="일지 날짜"></label><button type="button" class="outline-button" id="today-button">오늘로</button></section>
+        <div class="section-grid single-card-grid">
+          <section class="card ac-card" aria-labelledby="ac-heading"><div class="section-title"><div><span class="section-number">01</span><h2 id="ac-heading">설비 가동</h2></div><button type="button" class="equipment-plus" id="equipment-add" aria-label="설비 가동 추가" aria-expanded="false">＋</button></div><div id="equipment-picker" class="equipment-picker" hidden><span>추가할 설비를 선택하세요</span><div><button type="button" data-equipment="에어컨">❄ 에어컨</button><button type="button" data-equipment="제습기">♧ 제습기</button><button type="button" data-equipment="건조로">♨ 건조로</button></div></div><div id="equipment-entries"></div></section>
+        </div>
+        <section class="card" aria-labelledby="environment-heading"><div class="section-title"><div><span class="section-number">02</span><h2 id="environment-heading">환경 기록</h2></div><span class="muted">습도 % · 온도 °C</span></div><div class="environment-grid" id="environment-fields"></div></section>
+        <section class="card work-card" aria-labelledby="work-heading"><div class="section-title"><div><span class="section-number">03</span><h2 id="work-heading">작업 기록</h2></div><span class="muted">작업번호별 공정을 기록해요</span></div><div id="work-fields"></div></section>
+        <div class="section-grid supplies-grid"><section class="card" aria-labelledby="sg-heading"><div class="section-title"><div><span class="section-number">04</span><h2 id="sg-heading">S/G</h2></div><span class="muted">번호 · 메모</span></div><div id="sg-items"></div><button type="button" class="add-button" data-add-item="sg">＋ 항목 추가</button></section><section class="card" aria-labelledby="curtain-heading"><div class="section-title"><div><span class="section-number">05</span><h2 id="curtain-heading">커플링</h2></div><span class="muted">번호 · 메모</span></div><div id="curtain-items"></div><button type="button" class="add-button" data-add-item="curtain">＋ 항목 추가</button></section></div>
+        <section class="card" id="notes-card" aria-labelledby="notes-heading"><div class="section-title"><div><span class="section-number">06</span><h2 id="notes-heading">특이사항</h2></div><label class="important-check"><input type="checkbox" id="notes-important"> ★ 중요</label></div><label><span class="sr-only">특이사항</span><textarea name="notes" data-field="memo" rows="4" placeholder="야간 건조로 가동, 인원 변동 등 기억할 내용을 남겨 주세요."></textarea></label><button type="button" class="voice-button" aria-pressed="false" aria-label="특이사항 음성 입력">● 음성 입력</button><p class="voice-status" role="status" aria-live="polite"></p><div class="notes-bottom"><span>기념일·음력 등도 자유롭게 기록할 수 있어요.</span><span id="notes-count">0자</span></div></section>
+        <div class="form-footer"><span><span class="status-dot"></span> 기기에 자동 저장됩니다</span><button type="button" class="primary-button" id="review-button">입력 내용 확인 <span>↗</span></button></div>
+      </form>
+      <section id="graphs-panel" hidden aria-labelledby="graphs-heading"><div class="section-title"><h2 id="graphs-heading">환경 그래프</h2><span class="auto-label">현장 측정 기록</span></div><div class="card search-filter-grid graph-controls"><label>기간<select id="graph-period"><option value="week">주간 · 기준일까지 7일</option><option value="month">월간 · 기준일의 월</option></select></label><label>기준일<input id="graph-date" type="date"></label><label>구역<select id="graph-area"><option value="">성장·태동 비교</option><option>성장</option><option>태동</option></select></label><label>시간대<select id="graph-time"><option value="">아침·오후 비교</option><option>아침</option><option>오후</option></select></label></div><p id="graph-status" class="field-hint" role="status"></p><div id="graph-legend" class="graph-legend"></div><section class="card graph-card"><h3>온도 <small>°C</small></h3><div id="temperature-chart"></div></section><section class="card graph-card"><h3>습도 <small>%</small></h3><div id="humidity-chart"></div></section><details class="card graph-data"><summary>날짜별 측정값 보기</summary><div class="hourly-scroll"><table class="hourly-table"><thead><tr><th>날짜</th><th>구역·시간대</th><th>온도 °C</th><th>습도 %</th></tr></thead><tbody id="graph-table"></tbody></table></div></details><p class="field-hint">성장·태동에 직접 기록한 측정값입니다. 빈칸은 그래프에서 연결하지 않습니다. 점이나 날짜를 누르면 해당 일지를 엽니다. 현재 브라우저에 저장된 기록을 사용합니다.</p></section>
+      <section id="search-panel" hidden aria-labelledby="search-heading"><div class="section-title"><h2 id="search-heading">기록 검색</h2><span class="auto-label">작업 이력 찾기</span></div><form class="card search-form" id="record-search-form"><label for="search-query">작업번호·기계번호·메모</label><div class="search-query-row"><input id="search-query" type="search" placeholder="예: 1341, M1, 품질" autocomplete="off"><button class="primary-button" type="submit">검색</button></div><div class="search-filter-grid"><label>검색 대상<select id="search-scope"><option value="all">전체 기록</option><option value="number">작업번호</option><option value="parts">기계번호</option><option value="memo">작업 메모·특이사항</option><option value="supplies">S/G·커플링</option></select></label><label>구역<select id="search-area"><option value="">전체 구역</option><option>성장</option><option>태동</option></select></label><label>공정<select id="search-stage"><option value="">전체 공정</option><option>하도</option><option>중도</option><option>상도</option></select></label><label>번호 일치<select id="search-match"><option value="partial">일부 포함</option><option value="exact">정확히 일치</option></select></label><label>시작 날짜<input id="search-from" type="date"></label><label>종료 날짜<input id="search-to" type="date"></label></div><div class="search-bottom"><label class="important-check"><input id="search-important" type="checkbox"> ★ 중요만</label><button id="search-reset" class="outline-button" type="button">초기화</button></div></form><p id="search-status" class="field-hint" role="status" aria-live="polite">검색어를 입력하면 날짜별 작업 이력을 확인할 수 있습니다.</p><div id="search-results"></div><p class="field-hint">현재 브라우저에 저장된 일지를 검색합니다. 날짜를 누르면 원본 일지가 열립니다. 표시 순서는 저장된 기록 기준이며 공정 완료 여부를 자동 판단하지 않습니다.</p></section>
+      <section id="journals-panel" hidden aria-labelledby="journals-heading"><div class="section-title"><div><h2 id="journals-heading">일지 목록·달력</h2></div><span class="auto-label">기기에 저장된 일지</span></div><div class="important-toolbar"><label class="important-check"><input type="checkbox" id="important-only"> 중요만 보기 <small>전체 기간</small></label><div class="important-export-actions"><button type="button" id="export-important">CSV 추출</button></div></div><p id="important-cloud-status" class="field-hint" role="status">중요사항은 상단 전체 전송으로 함께 보관됩니다.</p><p id="important-export-status" class="field-hint" role="status"></p><section class="card"><div class="calendar-controls"><button type="button" id="month-prev" aria-label="이전 달">‹</button><h2 id="month-title" aria-live="polite"></h2><button type="button" id="month-next" aria-label="다음 달">›</button><button type="button" id="month-today">이번 달</button></div><div class="calendar-week" aria-hidden="true"><span>일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span></div><div id="journal-calendar" class="journal-calendar"></div><p class="field-hint">● 저장된 일지 · ★ 중요 · 날짜를 누르면 일지를 엽니다.</p></section><section class="card journal-list-card"><div class="section-title"><h2 id="journal-list-title">이달의 기록</h2><span class="muted" id="journal-month-count"></span></div><div id="journal-month-list"></div></section><p class="field-hint">현재 브라우저에 저장된 일지만 표시합니다. Google Sheets 기록 가져오기는 아직 지원하지 않습니다.</p></section>
+      <section id="weather-panel" hidden aria-labelledby="weather-page-heading">
+        <div class="weather-heading"><div><h1 id="weather-page-heading">경상남도 의령군 봉수면 날씨</h1></div><span class="location-chip">⌖ 봉수면</span></div>
+        <div class="card weather-controls"><label>날짜 선택<input id="weather-date" type="date" aria-label="날씨 기록 날짜"></label><button type="button" class="outline-button" id="weather-today">오늘</button><button type="button" class="primary-button" id="weather-refresh">날씨 새로 불러오기</button></div>
+        <div id="weather-status" class="weather-status" role="status" aria-live="polite"></div>
+        <section class="card weather-day"><div class="section-title"><div><span class="section-number">01</span><h2 id="weather-day-title">근무시간 날씨 흐름</h2></div><span class="auto-label">모델 기반 날씨</span></div><div id="weather-flow" class="weather-flow"></div><p class="field-hint">08~10 · 10~12 · 13~15 · 15~17시 / 점심 12~13시 제외</p></section>
+        <section class="card"><div class="section-title"><div><span class="section-number">02</span><h2>시간별 상세</h2></div><span class="muted">한국 표준시 · KST</span></div><div class="hourly-scroll"><table class="hourly-table"><thead><tr><th scope="col">시각</th><th scope="col">날씨</th><th scope="col">기온</th><th scope="col">습도</th><th scope="col">강수량</th></tr></thead><tbody id="weather-hourly"></tbody></table></div><p class="field-hint">기온·습도는 해당 정시의 값, 강수량은 해당 정시 직전 1시간의 누적량입니다.</p></section>
+        <section class="card"><div class="section-title"><div><span class="section-number">03</span><h2>날짜별 저장 기록</h2></div><div class="weather-save-actions"><button type="button" class="outline-button" id="weather-export">날씨 백업</button></div></div><p id="weather-cloud-status" class="field-hint" role="status">날씨 원본과 조회 이력도 상단 전체 전송으로 함께 보관됩니다.</p><div id="weather-history" class="weather-history"></div><p class="field-hint">같은 브라우저에서만 보관됩니다. 브라우저 데이터 삭제에 대비해 백업해 주세요.</p></section>
+        <div class="weather-source"><p>자료: <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> / 원자료를 2시간 단위로 요약했습니다.</p><p>지역 격자 모델 자료이며 현장 관측값이 아닙니다. 앱을 열면 날짜별로 자동 조회·저장합니다. 앱을 닫은 뒤의 날씨 수집은 Apps Script 예약 수집 설정이 필요합니다.</p><p id="weather-provenance"></p></div>
+      </section>
+      <footer class="page-footer">SJ 현장일지 <span>하루의 꼼꼼함이, 내일의 기준이 됩니다.</span></footer>
+    </main>
+  </div>
+  <dialog id="review-dialog"><div class="dialog-heading"><div><span class="eyebrow">REVIEW</span><h2>입력 내용 확인</h2></div><button type="button" class="icon-button" id="close-review" aria-label="닫기">×</button></div><p class="dialog-notice">입력은 기기에 자동 저장됩니다. Google Drive 전송 상태는 상단에서 확인해 주세요.</p><pre id="review-content"></pre><button type="button" class="primary-button" id="back-to-form">입력 화면으로</button></dialog>
+  <dialog id="drive-dialog"><div class="dialog-heading"><h2>Google Drive 연동 설정</h2><button type="button" class="icon-button" id="drive-close" aria-label="연동 설정 닫기">×</button></div><p class="field-hint">전체 전송 한 번으로 SJ 현장일지 파일의 오늘일지·날씨기록·일지달력·그래프를 취합합니다. 전송된 원본과 수정 이력은 함께 보관합니다.</p><button type="button" id="voice-check-open" class="outline-button">음성 점검 · 갤럭시</button><form id="drive-config"><label>웹 앱 URL (/exec)<input id="drive-url" type="url" required placeholder="https://script.google.com/macros/s/…/exec"></label><label>연결 키<input id="drive-key" type="password" required autocomplete="off" placeholder="Apps Script의 SJ_KEY 값"></label><label>스프레드시트 주소<input id="drive-sheet-url" type="url" placeholder="https://docs.google.com/spreadsheets/d/…/edit"></label><p class="field-hint">URL과 키는 이 브라우저에 보관됩니다. 연결 확인은 일지를 보내지 않고 진행합니다. 자동 전송은 별도로 켜 주세요.</p><p id="drive-config-status" role="status"></p><div class="drive-actions"><button type="button" id="drive-test">연결 확인</button><button type="submit">설정 저장</button></div></form><details><summary>처음 한 번 연결하는 방법</summary><ol><li>Google Sheets를 새로 만들고 확장 프로그램 → Apps Script를 엽니다. 또는 독립 Apps Script 프로젝트를 사용해도 됩니다.</li><li>google_apps_script.js 전체 내용을 붙여넣고 저장합니다.</li><li>SJ현장일지생성 함수를 실행하고 권한을 승인합니다. 네 개 탭이 즉시 생성됩니다. 연결 키는 프로젝트 설정 → 스크립트 속성 → SJ_KEY에서 복사합니다.</li><li>배포 → 새 배포 → 웹 앱. 실행 사용자: 나 / 액세스: 모든 사용자로 설정합니다. 연결 키가 일지 전송을 보호하며 시트 자체를 공개하지 않습니다.</li><li>배포된 /exec URL과 연결 키를 위에 입력하고 연결 확인 → 설정 저장을 누릅니다.</li></ol></details><p class="field-hint">전체 전송은 기기의 모든 저장 일지·날씨 조회 이력을 보내고, 기존 클라우드 원본과 취합해 4개 탭과 차트를 갱신합니다. 시트의 내용을 앱으로 가져오는 기능은 아직 지원하지 않습니다.</p></dialog>
+  <dialog id="voice-check-dialog"><div class="dialog-heading"><h2>갤럭시 음성 점검</h2><button type="button" class="icon-button" id="voice-check-close" aria-label="음성 점검 닫기">×</button></div><dl id="voice-check-info" class="voice-check-info"></dl><p class="field-hint">S24 FE 등 갤럭시의 Chrome 기준입니다. 지원 표시만으로 음성 서버 연결 성공을 뜻하지 않습니다.</p><button type="button" class="primary-button" id="voice-check-mic">마이크 권한 확인</button><p id="voice-check-status" role="status" class="field-hint"></p><p class="field-hint">파일 주소(file/content)나 카카오톡 내부에서 실패하면 HTTPS 웹앱을 Chrome에서 열어야 할 수 있습니다. 입력칸을 눌러 키보드로 직접 입력하는 기능은 계속 사용할 수 있습니다.</p></dialog>
+<script>
+(function () {
+  'use strict';
+  let active = null;
+  const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const android=typeof navigator!=='undefined'&&/Android/i.test(navigator.userAgent||'');
+  const unsupported='이 브라우저는 음성 인식을 지원하지 않습니다. 갤럭시에서는 Chrome에서 열어 다시 시도하거나 삼성 키보드의 음성 입력을 사용해 주세요.';
+  window.attachMemoVoice = function (row, options = {}) {
+    const input = options.input || row.querySelector('[data-field="memo"]');
+    const button = row.querySelector('.voice-button');
+    const status = row.querySelector('.voice-status');
+    let session = null, disposed = false;
+    const hint = options.hint || '음성 입력을 누르고 말하면 메모에 추가됩니다. 음성은 브라우저 제공업체에서 처리될 수 있습니다. 오디오 파일은 저장하지 않습니다.';
+    status.textContent = Recognition ? hint : unsupported;
+    button.disabled = false;
+    function finish(s) {
+      if (session !== s) return;
+      session = null;
+      if (active === s) active = null;
+      input.readOnly = false;
+      button.disabled = false;
+      if(s.startTimer&&typeof clearTimeout==='function')clearTimeout(s.startTimer);
+      if(s.stopTimer&&typeof clearTimeout==='function')clearTimeout(s.stopTimer);
+      button.textContent = '● 음성 입력';
+      button.setAttribute('aria-pressed','false');
+    }
+    function stop(s) {
+      if (!s || s.stopping) return;
+      s.stopping = true;
+      button.disabled = true;
+      status.textContent = '음성을 텍스트로 마무리하고 있습니다…';
+      try { s.recognition.stop();if(session===s&&typeof setTimeout==='function')s.stopTimer=setTimeout(()=>{if(session!==s)return;status.textContent='음성 종료 응답이 없습니다. 인식된 내용만 유지했습니다. 다시 시도하거나 직접 입력해 주세요.';finish(s);try{s.recognition.abort();}catch{}},5000); } catch { finish(s); }
+    }
+    button.addEventListener('click', () => {
+      if (session) { stop(session); return; }
+      if (disposed) return;
+      if (!Recognition) { status.hidden=false;status.textContent=unsupported;return; }
+      if (active) { status.textContent = '다른 작업의 음성 입력을 먼저 중지해 주세요.'; return; }
+      if (window.isSecureContext === false) { status.textContent = '음성 입력은 HTTPS 또는 localhost 주소에서 사용할 수 있습니다.'; return; }
+      const s = {recognition:null, stopping:false, received:false, error:false};
+      try {
+        s.recognition = new Recognition();
+        s.recognition.lang = 'ko-KR';
+        s.recognition.continuous = !android && !options.replace;
+        s.recognition.interimResults = true;
+        session = s; active = s;
+        input.readOnly = true;
+        button.textContent = '■ 음성 입력 중지';
+        button.setAttribute('aria-pressed','true');
+        status.textContent = '마이크 연결 중… 권한 요청이 표시되면 허용해 주세요.';
+        s.recognition.onstart = () => {if(s.startTimer&&typeof clearTimeout==='function')clearTimeout(s.startTimer); if(session === s) status.textContent = android?'듣고 있습니다. 짧게 말한 뒤 잠시 기다려 주세요.':'듣고 있습니다. 말을 마치면 중지를 눌러 주세요.'; };
+        s.recognition.onresult = event => {
+          if (session !== s || disposed) return;
+          const interim = [];
+          for (let i = event.resultIndex; i < event.results.length; i++) {
+            const result = event.results[i], transcript = result[0].transcript.trim();
+            if (result.isFinal && transcript) {
+              input.value = options.replace ? transcript : [input.value.trimEnd(),transcript].filter(Boolean).join(' ');
+              s.received = true;
+              input.dispatchEvent(new Event('input',{bubbles:true}));
+            } else if (transcript) interim.push(transcript);
+          }
+          status.textContent = interim.length ? `인식 중: ${interim.join(' ')}` : (options.replace ? '인식한 번호를 입력했습니다. 값을 확인해 주세요.' : '인식한 문장을 메모에 추가했습니다. 계속 말하거나 중지를 눌러 주세요.');
+        };
+        s.recognition.onerror = event => {
+          if (session !== s || disposed) return;
+          s.error = true;
+          const messages = {'not-allowed':'마이크 권한이 차단되었습니다. 갤럭시 설정 → 애플리케이션 → 사용 중인 브라우저 → 권한 → 마이크와 브라우저 사이트 설정을 확인해 주세요.','service-not-allowed':'브라우저에서 음성 인식 서비스가 허용되지 않습니다. 다른 지원 브라우저에서 열어 주세요.','audio-capture':'마이크를 찾을 수 없습니다. 마이크 연결을 확인해 주세요.','network':'음성 인식 서버에 연결하지 못했습니다. 인터넷 연결을 확인하고 카카오톡·파일 미리보기 대신 Chrome에서 열어 주세요. 로컬 HTML 파일에서는 기기에 따라 이 서비스가 동작하지 않을 수 있습니다.','no-speech':'음성이 감지되지 않았습니다. 버튼을 눌러 다시 말해 주세요.','language-not-supported':'이 브라우저에서는 한국어 음성 인식을 사용할 수 없습니다.','aborted':'음성 입력을 중단했습니다.'};
+          status.textContent = (messages[event.error] || '음성 인식에 실패했습니다. 다시 시도하거나 직접 입력해 주세요.') + ' 기존 입력값은 유지됩니다.';
+          try { s.recognition.abort(); } catch {}
+          finish(s);
+        };
+        s.recognition.onend = () => {
+          if(session !== s || disposed) return;
+          if(!s.error) status.textContent = s.received ? '음성 입력 완료. 입력값을 확인하고 필요하면 수정해 주세요.' : '인식된 문장이 없습니다. 다시 말하거나 직접 입력해 주세요.';
+          finish(s);
+        };
+        if(typeof setTimeout==='function')s.startTimer=setTimeout(()=>{if(session!==s)return;status.textContent='음성 서비스 연결 시간이 초과되었습니다. Chrome과 인터넷·마이크 권한을 확인해 주세요. 기존 입력값은 유지됩니다.';finish(s);try{s.recognition.abort();}catch{}},12000);
+        s.recognition.start();
+      } catch {
+        status.textContent = '음성 입력을 시작하지 못했습니다. 마이크 권한과 브라우저 지원 여부를 확인해 주세요.';
+        if (session === s) finish(s);
+      }
+    });
+    return {dispose() {disposed=true;const s=session;if(s){finish(s);try{s.recognition.abort();}catch{}}}};
+  };
+  document.addEventListener('visibilitychange',()=>{if(document.hidden && active){try{active.recognition.stop();}catch{}}});
+})();
+
+;
+(function(){
+  'use strict';
+  const q=s=>document.querySelector(s);
+  q('#voice-check-open').addEventListener('click',()=>{
+    q('#voice-check-info').replaceChildren();
+    const ua=navigator.userAgent||'';
+    const items=[['사용 환경',/Android/.test(ua)?'Android 갤럭시·모바일 계열':'PC 또는 기타 기기'],['주소 형식',location.protocol],['보안 환경',window.isSecureContext?'예':'아니요'],['브라우저 음성 API',window.SpeechRecognition||window.webkitSpeechRecognition?'있음 (서버 연결은 별도 확인)':'없음 — 이 실행 환경에서 사용할 수 없음'],['마이크 접근 API',navigator.mediaDevices?.getUserMedia?'있음':'없음 — 보안 연결·실행 앱 확인 필요']];
+    for(const [name,value] of items){const dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=name;dd.textContent=value;q('#voice-check-info').append(dt,dd);}
+    q('#voice-check-status').textContent='권한 확인 버튼을 누르면 마이크 사용을 요청하고 연결 후 즉시 종료합니다. 오디오는 녹음·전송하지 않습니다.';
+    q('#voice-check-dialog').showModal();
+  });
+  q('#voice-check-close').addEventListener('click',()=>q('#voice-check-dialog').close());
+  q('#voice-check-mic').addEventListener('click',async()=>{
+    if(!navigator.mediaDevices?.getUserMedia){q('#voice-check-status').textContent='이 환경에서 마이크에 접근할 수 없습니다. Chrome에서 HTTPS 웹앱으로 열어 주세요.';return;}
+    q('#voice-check-mic').disabled=true;
+    try{const stream=await navigator.mediaDevices.getUserMedia({audio:true});stream.getTracks().forEach(track=>track.stop());q('#voice-check-status').textContent='마이크 권한과 장치 연결을 확인했습니다. 음성 인식 실패가 계속되면 음성 서버·인터넷 또는 파일 실행 환경을 확인해야 합니다.';}
+    catch(e){q('#voice-check-status').textContent=e.name==='NotAllowedError'?'마이크 권한이 거부됐습니다. 갤럭시 설정 → 애플리케이션 → Chrome → 권한 → 마이크와 Chrome 사이트 설정을 확인해 주세요.':`마이크 확인 실패 (${e.name}). 마이크 연결과 다른 앱의 사용 여부를 확인해 주세요.`;}
+    finally{q('#voice-check-mic').disabled=false;}
+  });
+})();
+
+;
+(function(){
+  'use strict';
+  const entries=document.querySelector('#equipment-entries');
+  const picker=document.querySelector('#equipment-picker');
+  const plus=document.querySelector('#equipment-add');
+  const types=['에어컨','제습기','건조로'];
+  let counter=0;
+  function changed(){entries.dispatchEvent(new Event('input',{bubbles:true}));}
+  function add(item={type:'에어컨'},focus=false){
+    const id=++counter;
+    const row=document.createElement('div');row.className='equipment-entry';
+    row.innerHTML=`<div class="equipment-entry-title"><label><span class="sr-only">설비 ${id} 종류</span><select aria-label="설비 ${id} 종류">${types.map(type=>`<option>${type}</option>`).join('')}</select></label><button type="button" class="icon-button" aria-label="설비 ${id} 삭제">×</button></div><div class="time-fields"><label>시작 시간<input type="time" data-time="start" aria-label="설비 ${id} 시작 시간"></label><span class="time-dash">—</span><label>종료 시간<input type="time" data-time="end" aria-label="설비 ${id} 종료 시간"></label></div>`;
+    row.querySelector('select').value=types.includes(item.type)?item.type:'에어컨';
+    row.querySelector('[data-time="start"]').value=item.start||'';
+    row.querySelector('[data-time="end"]').value=item.end||'';
+    row.querySelector('button').addEventListener('click',()=>{row.remove();changed();plus.focus();});
+    entries.append(row);
+    if(focus)row.querySelector('[data-time="start"]').focus();
+  }
+  function close(){picker.hidden=true;plus.setAttribute('aria-expanded','false');}
+  plus.addEventListener('click',()=>{picker.hidden=!picker.hidden;plus.setAttribute('aria-expanded',String(!picker.hidden));});
+  picker.querySelectorAll('[data-equipment]').forEach(button=>button.addEventListener('click',()=>{add({type:button.dataset.equipment},true);close();changed();}));
+  picker.addEventListener('keydown',event=>{if(event.key==='Escape'){close();plus.focus();}});
+  window.Equipment={read(){return [...entries.children].map(row=>({type:row.querySelector('select').value,start:row.querySelector('[data-time="start"]').value,end:row.querySelector('[data-time="end"]').value}));},restore(journal){entries.replaceChildren();close();const items=Array.isArray(journal?.equipment)?journal.equipment:[{type:'에어컨',start:journal?.acStart||'',end:journal?.acEnd||''}];items.forEach(item=>add(item));}};
+  window.Equipment.restore();
+})();
+
+;
+'use strict';
+const $ = (selector, root = document) => root.querySelector(selector);
+const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
+const areas = ['성장', '태동'];
+const weatherOptions = [['맑음', '☀'], ['흐림', '☁'], ['비', '☂'], ['눈', '❄']];
+const localDate = () => new Intl.DateTimeFormat('sv-SE', {timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+const dateField = $('#journal-date');
+dateField.value = localDate();
+function updateDate() {
+  const d = new Date(`${dateField.value}T12:00:00`);
+  if (!Number.isNaN(d.valueOf())) {
+    $('#date-heading').textContent = `${d.getFullYear()}년 ${d.getMonth()+1}월 ${d.getDate()}일 ${['일','월','화','수','목','금','토'][d.getDay()]}요일`;
+  }
+}
+dateField.addEventListener('change', updateDate);
+$('#today-button').addEventListener('click', () => { dateField.value = localDate(); updateDate(); });
+updateDate();
+let rowId = 0;
+areas.forEach((area, index) => {
+  const section = document.createElement('div');
+  section.className = 'environment-area';
+  section.innerHTML = `<div class="area-label"><span class="area-mark ${index ? 'blue' : ''}"></span>${area}</div>`;
+  ['아침','오후'].forEach(period => {
+    const row = document.createElement('div');
+    row.className = 'measurement-row';
+    row.dataset.area = area;
+    row.dataset.period = period;
+    row.innerHTML = `<span class="period">${period}</span><label class="unit-input"><input type="number" inputmode="decimal" min="0" max="100" step="0.1" placeholder="습도" data-metric="humidity" aria-label="${area} ${period} 습도"><span>%</span></label><label class="unit-input"><input type="number" inputmode="decimal" min="-50" max="100" step="0.1" placeholder="온도" data-metric="temperature" aria-label="${area} ${period} 온도"><span>°C</span></label>`;
+    section.append(row);
+  });
+  $('#environment-fields').append(section);
+  const workSection = document.createElement('div');
+  workSection.className = 'work-area';
+  workSection.dataset.area = area;
+  workSection.innerHTML = `<div class="work-area-heading"><div class="area-label"><span class="area-mark ${index ? 'blue' : ''}"></span>${area}</div><span>한 작업번호에 공정별로 행을 추가하세요</span></div><div class="work-entries"></div><button type="button" class="add-button">＋ ${area} 작업 추가</button>`;
+  $('.add-button',workSection).addEventListener('click', () => addWork(workSection,true));
+  $('#work-fields').append(workSection);
+  addWork(workSection);
+});
+function addWork(section, focus = false) {
+  const id = ++rowId;
+  const area = section.dataset.area;
+  const row = document.createElement('div');
+  row.className = 'work-entry';
+  row.innerHTML = `<div class="work-entry-top"><label class="input-field"><span>작업번호</span><input type="text" data-field="number" placeholder="예: 1341" aria-label="${area} 작업 ${id} 번호"></label><label class="input-field"><span>기계번호</span><input type="text" data-field="parts" placeholder="예: M1,2,4 또는 W/L" aria-label="${area} 작업 ${id} 기계번호"></label><button type="button" class="icon-button remove-work" aria-label="${area} 작업 ${id} 행 삭제">×</button></div><div class="stage-row"><span>공정</span><div class="stage-options" role="group" aria-label="${area} 작업 ${id} 공정">${['하도','중도','상도'].map(stage => `<button type="button" class="stage-button" aria-pressed="false">${stage}</button>`).join('')}</div></div><div class="dryer-row"><label class="check-label"><input type="checkbox" data-field="dryer">건조로 가동</label><label class="check-label"><input type="checkbox" data-field="dehumidifier">제습기 가동</label><label class="dryer-duration" hidden><input type="number" min="0.1" max="168" step="0.1" inputmode="decimal" data-field="hours" placeholder="3" aria-label="${area} 작업 ${id} 건조로 가동 시간">시간</label></div><div class="memo-input-row"><input class="work-memo" type="text" data-field="memo" placeholder="공정 순서, 도장 횟수, 건조 후 작업 등 메모" aria-label="${area} 작업 ${id} 메모"><button type="button" class="voice-button" aria-pressed="false" aria-label="${area} 작업 ${id} 메모 음성 입력">● 음성 입력</button></div><p class="voice-status" role="status" aria-live="polite"></p>`;
+  const voices = [window.attachMemoVoice(row)];
+  ['number','parts'].forEach(field => {
+    const input = $(`[data-field="${field}"]`,row);
+    const label = input.parentElement;
+    const container = document.createElement('div');container.className='number-voice';
+    const name = field === 'number' ? '작업번호' : '기계번호';
+    container.innerHTML = `<button type="button" class="voice-button" aria-pressed="false" aria-label="${area} 작업 ${id} ${name} 음성 입력">● 음성 입력</button><p class="voice-status" role="status" aria-live="polite" hidden></p>`;
+    // Keep the microphone outside the input label.
+    const wrapper = document.createElement('div');wrapper.className='input-field number-voice-field';
+    label.replaceWith(wrapper);wrapper.append(label,container);
+    $('button',container).addEventListener('click',()=>$('.voice-status',container).hidden=false);
+    voices.push(window.attachMemoVoice(container,{input,replace:true,hint:`${name}를 말하면 해당 칸에 입력됩니다. 인식된 숫자·영문과 앞자리 0을 확인해 주세요. 음성은 브라우저 제공업체에서 처리될 수 있습니다.`}));
+  });
+  row.disposeVoice = () => voices.forEach(voice=>voice.dispose());
+  $('.remove-work',row).addEventListener('click', () => { row.disposeVoice(); row.remove(); $('.add-button',section).focus(); });
+  $$('.stage-button',row).forEach(button => button.addEventListener('click', () => {
+    const selected = button.getAttribute('aria-pressed') === 'true';
+    $$('.stage-button',row).forEach(b => b.setAttribute('aria-pressed','false'));
+    button.setAttribute('aria-pressed',String(!selected));
+  }));
+  $('[data-field="dryer"]',row).addEventListener('change', e => {
+    $('.dryer-duration',row).hidden = !e.target.checked;
+    $('[data-field="hours"]',row).disabled = !e.target.checked;
+  });
+  $('[data-field="hours"]',row).disabled = true;
+  $('.work-entries',section).append(row);
+  if (focus) $('[data-field="number"]',row).focus();
+}
+function addItem(kind, focus = false) {
+  const title = kind === 'sg' ? 'S/G' : '커플링';
+  const row = document.createElement('div');
+  row.className = 'item-entry';
+  row.innerHTML = `<input type="text" data-field="number" placeholder="물품 번호" aria-label="${title} 물품 번호"><input type="text" data-field="memo" placeholder="메모" aria-label="${title} 메모"><button type="button" class="icon-button" aria-label="${title} 항목 삭제">×</button>`;
+  const voices = [];
+  ['number','memo'].forEach(field=>{
+    const input=$(`[data-field="${field}"]`,row);
+    const wrapper=document.createElement('div');wrapper.className='item-voice-field';
+    input.replaceWith(wrapper);wrapper.append(input);
+    const container=document.createElement('div');container.className='number-voice';
+    const name=field==='number'?'물품 번호':'메모';
+    container.innerHTML=`<button type="button" class="voice-button" aria-pressed="false" aria-label="${title} ${name} 음성 입력">● 음성 입력</button><p class="voice-status" role="status" aria-live="polite" hidden></p>`;
+    wrapper.append(container);
+    $('button',container).addEventListener('click',()=>$('.voice-status',container).hidden=false);
+    voices.push(window.attachMemoVoice(container,{input,replace:field==='number',hint:field==='number'?'물품 번호를 말해 주세요. 인식된 숫자·영문을 확인해 주세요.':'말한 내용을 메모 뒤에 추가합니다. 음성은 브라우저 제공업체에서 처리될 수 있습니다.'}));
+  });
+  row.disposeVoice=()=>voices.forEach(voice=>voice.dispose());
+  $('.icon-button',row).addEventListener('click', () => { row.disposeVoice(); row.remove(); $(`[data-add-item="${kind}"]`).focus(); });
+  $(`#${kind}-items`).append(row);
+  if (focus) $('input',row).focus();
+}
+['sg','curtain'].forEach(kind => { addItem(kind); $(`[data-add-item="${kind}"]`).addEventListener('click',() => addItem(kind,true)); });
+$('[name="notes"]').addEventListener('input', e => { $('#notes-count').textContent = `${e.target.value.length}자`; });
+$('#journal-form').addEventListener('submit',e => e.preventDefault());
+function readValue(root, field) { return $(`[data-field="${field}"]`,root).value.trim(); }
+$('#review-button').addEventListener('click', () => {
+  if (!$('#journal-form').reportValidity()) return;
+  const lines = [$('#date-heading').textContent,'',`봉수면 날씨: ${window.journalWeatherSummary || '불러온 자료 없음'}`,`설비 가동:\n${window.Equipment.read().map(item=>`${item.type}: ${item.start || '미입력'} ~ ${item.end || '미입력'}`).join('\n') || '기록 없음'}`,'','[환경 기록]'];
+  $$('.measurement-row').forEach(row => {
+    const humidity = $('[data-metric="humidity"]',row).value;
+    const temperature = $('[data-metric="temperature"]',row).value;
+    lines.push(`${row.dataset.area} ${row.dataset.period}: 습도 ${humidity === '' ? '미입력' : `${humidity}%`} / 온도 ${temperature === '' ? '미입력' : `${temperature}°C`}`);
+  });
+  $$('.work-area').forEach(section => {
+    lines.push('',`[${section.dataset.area} 작업]`);
+    let count = 0;
+    $$('.work-entry',section).forEach(row => {
+      const number = readValue(row,'number'); const parts = readValue(row,'parts'); const memo = readValue(row,'memo');
+      const stage = $('.stage-button[aria-pressed="true"]',row)?.textContent;
+      const dryer = $('[data-field="dryer"]',row).checked;
+      const dehumidifier = $('[data-field="dehumidifier"]',row).checked;
+      if (!number && !parts && !memo && !stage && !dryer && !dehumidifier) return;
+      count++;
+      lines.push(`${count}. ${number || '(작업번호 미입력)'} · ${parts || '기계번호 미입력'} · ${stage || '공정 미선택'}${dryer ? ` · 건조로 ${readValue(row,'hours') || '시간 미입력'}${readValue(row,'hours') ? '시간' : ''}` : ''}${dehumidifier ? ' · 제습기 가동' : ''}${memo ? `\n   ${memo}` : ''}`);
+    });
+    if (!count) lines.push('입력한 작업 없음');
+  });
+  ['sg','curtain'].forEach(kind => {
+    lines.push('',`[${kind === 'sg' ? 'S/G' : '커플링'}]`);
+    const entries = $$('.item-entry',$(`#${kind}-items`)).map(row => [readValue(row,'number'),readValue(row,'memo')].filter(Boolean).join(' · ')).filter(Boolean);
+    lines.push(...(entries.length ? entries : ['입력한 항목 없음']));
+  });
+  lines.push('', $('#notes-important').checked ? '[★ 중요 특이사항]' : '[특이사항]',$('[name="notes"]').value.trim() || '입력한 내용 없음');
+  $('#review-content').textContent = lines.join('\n');
+  $('#review-dialog').showModal();
+});
+['close-review','back-to-form'].forEach(id => $(`#${id}`).addEventListener('click',() => $('#review-dialog').close()));
+
+window.attachMemoVoice($('#notes-card'));
+
+;
+(function (root) {
+  'use strict';
+  const slots = [{label:'오전 1',start:8,end:10},{label:'오전 2',start:10,end:12},{label:'오후 1',start:13,end:15},{label:'오후 2',start:15,end:17}];
+  function condition(code) {
+    if (code === 0) return ['맑음','☀'];
+    if (code === 1) return ['대체로 맑음','☀'];
+    if (code === 2) return ['구름 많음','⛅'];
+    if (code === 3) return ['흐림','☁'];
+    if ([45,48].includes(code)) return ['안개','≋'];
+    if ([51,53,55,56,57].includes(code)) return ['이슬비','☂'];
+    if ([61,63,65,66,67].includes(code)) return ['비','☂'];
+    if ([71,73,75,77,85,86].includes(code)) return ['눈','❄'];
+    if ([80,81,82].includes(code)) return ['소나기','☂'];
+    if ([95,96,99].includes(code)) return ['뇌우','ϟ'];
+    return ['자료 없음','—'];
+  }
+  const numeric = n => typeof n === 'number' && Number.isFinite(n);
+  const mean = values => values.length && values.every(numeric) ? Math.round(values.reduce((a,b)=>a+b,0)/values.length*10)/10 : null;
+  function summarize(hourly,date) {
+    if (!hourly || !Array.isArray(hourly.time)) throw new Error('시간별 날씨 자료 형식이 올바르지 않습니다.');
+    const rows = hourly.time.map((time,i) => ({time,code:hourly.weather_code?.[i] ?? null,temperature:hourly.temperature_2m?.[i] ?? null,humidity:hourly.relative_humidity_2m?.[i] ?? null,precipitation:hourly.precipitation?.[i] ?? null})).filter(row => typeof row.time === 'string' && row.time.startsWith(`${date}T`));
+    const groups = slots.map(slot => {
+      // Weather/temperature/humidity: samples at the start of each hour.
+      // Precipitation: endpoint samples because the API reports preceding-hour totals.
+      const samples = [slot.start,slot.start+1].map(hour => rows.find(row => row.time === `${date}T${String(hour).padStart(2,'0')}:00`));
+      const rain = [slot.start+1,slot.end].map(hour => rows.find(row => row.time === `${date}T${String(hour).padStart(2,'0')}:00`)?.precipitation);
+      const complete = samples.every(row => row && numeric(row.code) && numeric(row.temperature) && numeric(row.humidity)) && rain.every(numeric);
+      const labels = samples.map(row => condition(row?.code)[0]).filter((label,i,all) => i === 0 || label !== all[i-1]);
+      return {...slot,range:`${String(slot.start).padStart(2,'0')}:00~${slot.end}:00`,complete,description:complete ? labels.join(' → ') : '자료 부족',icon:complete ? condition(samples[samples.length-1].code)[1] : '—',temperature:mean(samples.map(row=>row?.temperature)),humidity:mean(samples.map(row=>row?.humidity)),precipitation:rain.every(numeric) ? Math.round(rain.reduce((a,b)=>a+b,0)*10)/10 : null};
+    });
+    return {date,rows,groups};
+  }
+  const api = {slots,condition,summarize};
+  if (typeof module !== 'undefined' && module.exports) module.exports = api;
+  else root.WeatherCore = api;
+})(typeof window !== 'undefined' ? window : globalThis);
+
+;
+(function () {
+  'use strict';
+  const q = s => document.querySelector(s);
+  const qa = s => [...document.querySelectorAll(s)];
+  const location = {name:'경상남도 의령군 봉수면',latitude:35.4722,longitude:128.2665};
+  const today = () => new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+  const formatTime = iso => new Intl.DateTimeFormat('ko-KR',{timeZone:'Asia/Seoul',dateStyle:'short',timeStyle:'short'}).format(new Date(iso));
+  const text = (tag,value,className) => { const el=document.createElement(tag); el.textContent=value; if(className) el.className=className; return el; };
+  const value = (n,unit) => typeof n === 'number' && Number.isFinite(n) ? `${n}${unit}` : '—';
+  let database, sequence=0, currentRecord=null, storageError='', activeController;
+  const ready = new Promise(resolve => {
+    try {
+      const request = indexedDB.open('hyeonjang-weather',1);
+      request.onupgradeneeded = () => { request.result.createObjectStore('days',{keyPath:'date'}); request.result.createObjectStore('revisions',{keyPath:'id',autoIncrement:true}); };
+      request.onsuccess = () => { database=request.result; database.onversionchange=()=>database.close(); resolve(); };
+      request.onerror = () => { storageError='브라우저 저장소를 열 수 없어 날씨를 보관할 수 없습니다.'; resolve(); };
+      request.onblocked = () => { storageError='다른 창을 닫고 다시 열어 주세요. 저장소가 잠겨 있습니다.'; resolve(); };
+    } catch { storageError='브라우저에서 저장소 사용을 허용하지 않습니다.'; resolve(); }
+  });
+  function dbRequest(store,method,arg) {
+    if (!database) return Promise.resolve(method === 'getAll' ? [] : null);
+    return new Promise((resolve,reject) => {
+      const tx=database.transaction(store,'readonly'); const req=tx.objectStore(store)[method](arg);
+      req.onsuccess=()=>resolve(req.result); req.onerror=()=>reject(new Error('저장 기록을 읽지 못했습니다.'));
+    });
+  }
+  function save(record) {
+    if (!database) return Promise.reject(new Error(storageError));
+    return new Promise((resolve,reject) => {
+      const tx=database.transaction(['days','revisions'],'readwrite');
+      tx.objectStore('days').put(record); tx.objectStore('revisions').add(record);
+      tx.oncomplete=()=>{window.dispatchEvent(new Event('sj-weather-saved'));resolve();}; tx.onerror=()=>reject(new Error('날씨 저장 실패: 브라우저 저장 공간을 확인해 주세요.')); tx.onabort=()=>reject(new Error('날씨 저장이 취소되었습니다.'));
+    });
+  }
+  function showView(view) {
+    const weather=view==='weather';
+    const journals=view==='journals';
+    const search=view==='search';
+    const graphs=view==='graphs';
+    q('#graphs-panel').hidden=!graphs;
+    q('#search-panel').hidden=!search;
+    q('#journal-form').hidden=weather||journals||search||graphs;
+    q('#journals-panel').hidden=!journals;
+    q('#weather-panel').hidden=!weather;
+    window.showJournalView=showView;
+  qa('[data-view]').forEach(el => { if(el.classList.contains('nav-item')) el.classList.toggle('active',el.dataset.view===view); if(el.closest('.mobile-tabs')) el.setAttribute('aria-pressed',String(el.dataset.view===view)); });
+    window.dispatchEvent(new CustomEvent('sj-view',{detail:view}));
+    document.title=`SJ 현장일지 · ${graphs ? '그래프' : search ? '검색' : journals ? '일지 목록·달력' : weather ? '봉수면 날씨 기록' : '오늘 기록'}`;
+  }
+  qa('[data-view]').forEach(el => el.addEventListener('click',e => { e.preventDefault(); const view=el.dataset.view; history.replaceState(null,'',`#${view}`); showView(view); }));
+  window.addEventListener('hashchange',()=>showView(['weather','journals','search','graphs'].includes(window.location.hash.slice(1))?window.location.hash.slice(1):'today'));
+  function setStatus(message,error=false) {
+    q('#weather-status').textContent=message; q('#weather-status').classList.toggle('error',error);
+  }
+  function render(record) {
+    currentRecord=record;
+    const date=q('#weather-date').value;
+    const summary=record ? WeatherCore.summarize(record.hourly,date) : {groups:WeatherCore.slots.map(s=>({...s,range:`${s.start}:00~${s.end}:00`,description:'자료 없음',icon:'—'})),rows:[]};
+    q('#weather-day-title').textContent=`${date} · 근무시간 날씨 흐름`;
+    q('#weather-flow').replaceChildren(); q('#weather-hourly').replaceChildren();
+    summary.groups.forEach(group => {
+      const card=text('article','','flow-card');
+      card.append(text('span',group.label,'flow-period'),text('strong',group.range,'flow-range'),text('span',group.icon,'flow-icon'),text('h3',group.description));
+      const stats=text('div','','flow-stats');
+      stats.append(text('span',`평균 기온 ${value(group.temperature,'°C')}`),text('span',`평균 습도 ${value(group.humidity,'%')}`),text('span',`누적 강수 ${value(group.precipitation,'mm')}`));
+      card.append(stats); q('#weather-flow').append(card);
+    });
+    summary.rows.filter(row => {const h=Number(row.time.slice(11,13));return h>=8&&h<=17;}).forEach(row => {
+      const tr=document.createElement('tr');
+      [row.time.slice(11,16),WeatherCore.condition(row.code).join(' '),value(row.temperature,'°C'),value(row.humidity,'%'),value(row.precipitation,'mm')].forEach(v=>tr.append(text('td',v)));
+      q('#weather-hourly').append(tr);
+    });
+    if (!summary.rows.length) {const tr=text('tr','');const td=text('td','불러온 시간별 자료가 없습니다.');td.colSpan=5;tr.append(td);q('#weather-hourly').append(tr);}
+    window.journalWeatherSummary=record ? `${date} / 모델 기반 · ${summary.groups.map(g=>`${g.range} ${g.description}`).join(' / ')} / 출처 Open-Meteo / 조회 ${formatTime(record.fetchedAt)}` : '';
+    q('#weather-provenance').textContent=record ? `조회 ${formatTime(record.fetchedAt)} · ${record.kind} · 요청 좌표 ${location.latitude}, ${location.longitude} · 제공 격자 ${record.grid.latitude}, ${record.grid.longitude}` : '지역 기상자료이며 성장·태동 실내 환경 측정값을 대신하지 않습니다.';
+  }
+  async function historyList() {
+    const records=await dbRequest('days','getAll');
+    q('#weather-history').replaceChildren();
+    records.sort((a,b)=>b.date.localeCompare(a.date)).forEach(record => {
+      const summary=WeatherCore.summarize(record.hourly,record.date);
+      const button=text('button','','weather-history-row'); button.type='button';
+      button.append(text('strong',record.date),text('span',summary.groups.map(g=>g.description).join(' → ')),text('small',`${record.kind} · 조회 ${formatTime(record.fetchedAt)}`));
+      button.addEventListener('click',()=>selectDate(record.date));q('#weather-history').append(button);
+    });
+    if (!records.length) q('#weather-history').append(text('p',storageError || '날씨를 불러오면 날짜별 기록이 여기에 쌓입니다.','field-hint'));
+  }
+  async function load(force=false) {
+    const ticket=++sequence; activeController?.abort(); activeController=new AbortController();
+    const controller=activeController;
+    const date=q('#weather-date').value;
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) {setStatus('날짜를 선택해 주세요.',true);return;}
+    q('#weather-refresh').disabled=true;
+    await ready;
+    try {
+      let cached=null;
+      try { cached=await dbRequest('days','get',date); } catch(e) {storageError=e.message;}
+      if(ticket!==sequence)return;
+      render(cached);
+      if (cached && !force && (date<today() || Date.now()-Date.parse(cached.fetchedAt)<30*60*1000)) {
+        setStatus(`저장된 날씨 · ${formatTime(cached.fetchedAt)} 조회 · 이 브라우저에 보관됨`); await historyList();return;
+      }
+      setStatus(cached ? '저장된 날씨를 표시 중입니다. 최신 자료를 확인합니다…' : '봉수면 시간별 날씨를 불러오고 있습니다…');
+      const age=Math.floor((Date.parse(`${today()}T00:00:00+09:00`)-Date.parse(`${date}T00:00:00+09:00`))/86400000);
+      if(age < -15) throw new Error('예보는 오늘부터 15일 뒤까지 조회할 수 있습니다.');
+      const historical=age>92;
+      const base=historical?'https://archive-api.open-meteo.com/v1/archive':'https://api.open-meteo.com/v1/forecast';
+      const params=new URLSearchParams({latitude:location.latitude,longitude:location.longitude,hourly:'temperature_2m,relative_humidity_2m,weather_code,precipitation',timezone:'Asia/Seoul',start_date:date,end_date:date});
+      const timeout=setTimeout(()=>controller.abort(),20000);
+      let response, data;
+      try {
+        response=await fetch(`${base}?${params}`,{signal:controller.signal});
+        if(!response.ok)throw new Error(response.status===429 ? '날씨 서비스 요청 한도에 도달했습니다. 잠시 후 다시 시도해 주세요.' : `날씨 서비스 응답 오류 (${response.status})`);
+        data=await response.json();
+      } finally {clearTimeout(timeout);}
+      if(data.error)throw new Error('선택한 날짜의 날씨 자료를 제공하지 않습니다.');
+      const summary=WeatherCore.summarize(data.hourly,date);
+      if(!summary.groups.every(g=>g.complete))throw new Error('4구간을 기록하기에 시간별 자료가 부족합니다. 잠시 후 다시 시도해 주세요.');
+      if(ticket!==sequence)return;
+      const record={date,location,grid:{latitude:data.latitude,longitude:data.longitude},kind:historical?'과거 재분석 모델':'예보 모델 자료',source:'Open-Meteo',fetchedAt:new Date().toISOString(),hourly:data.hourly};
+      render(record);
+      try {await save(record);if(ticket===sequence)setStatus(`${date} 날씨 자동 저장 완료 · ${formatTime(record.fetchedAt)} 조회 · ${record.kind}`);} catch(e) {if(ticket===sequence)setStatus(`${e.message} 현재 화면에서만 확인할 수 있습니다.`,true);}
+      await historyList();
+    } catch(e) {
+      if(ticket!==sequence)return;
+      const message=e.name==='AbortError'?'날씨 연결 시간이 초과되었습니다.':e.message;
+      setStatus(`${message} ${currentRecord ? '기존 저장 기록을 유지합니다.' : '날씨를 임의로 채우지 않았습니다. 네트워크 연결 후 다시 불러와 주세요.'}`,true);
+    } finally {
+      if(ticket===sequence) {
+        q('#weather-refresh').disabled=false;
+        try {await historyList();} catch(e) {setStatus(e.message,true);}
+      }
+    }
+  }
+  function selectDate(date) {
+    q('#weather-date').value=date; q('#journal-date').value=date;
+    q('#journal-date').dispatchEvent(new Event('change'));
+  }
+  q('#weather-date').value=q('#journal-date').value;
+  q('#weather-date').addEventListener('change',()=>selectDate(q('#weather-date').value));
+  q('#journal-date').addEventListener('change',()=>{q('#weather-date').value=q('#journal-date').value;load();});
+  q('#today-button').addEventListener('click',()=>selectDate(today()));
+  q('#weather-today').addEventListener('click',()=>selectDate(today()));
+  q('#weather-refresh').addEventListener('click',()=>load(true));
+  q('#weather-export').addEventListener('click',async()=>{
+    await ready;
+    try {
+      if(!database)throw new Error(storageError);
+      const [days,revisions]=await Promise.all([dbRequest('days','getAll'),dbRequest('revisions','getAll')]);
+      const blob=new Blob([JSON.stringify({version:1,exportedAt:new Date().toISOString(),location,days,revisions},null,2)],{type:'application/json'});
+      const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=`봉수면-날씨기록-${today()}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+    }catch(e){setStatus(e.message,true);}
+  });
+  window.WeatherStore={list:async()=>{await ready;if(!database)throw new Error(storageError||'날씨 저장소를 열 수 없습니다.');return dbRequest('days','getAll');},exportAll:async()=>{await ready;if(!database)throw new Error(storageError||'날씨 저장소를 열 수 없습니다.');const [days,revisions]=await Promise.all([dbRequest('days','getAll'),dbRequest('revisions','getAll')]);return {days,revisions};}};
+  showView(['weather','journals','search','graphs'].includes(window.location.hash.slice(1))?window.location.hash.slice(1):'today');
+  load();
+  // Refresh only while in use; opening a saved past date preserves its recorded snapshot.
+  setInterval(()=>{if(!document.hidden && q('#weather-date').value===today())load();},30*60*1000);
+})();
+
+;
+(function(root){
+  'use strict';
+  function hasContent(journal){
+    const entered=value=>value!==null&&value!==undefined&&String(value).trim()!=='';
+    return !!journal.important||entered(journal.notes)||(journal.environment||[]).some(e=>entered(e.temperature)||entered(e.humidity))||
+      (journal.work||[]).some(a=>(a.items||[]).some(item=>['number','parts','stage','memo','hours'].some(k=>entered(item[k]))||item.dryer||item.dehumidifier))||
+      (journal.supplies||[]).some(s=>(s.items||[]).some(i=>entered(i.number)||entered(i.memo)))||
+      (journal.equipment||[]).some(e=>entered(e.start)||entered(e.end)||e.type!=='에어컨')||(journal.equipment||[]).length>1;
+  }
+  function plan(journals,weather,limit=32000){
+    const unique=new Map();
+    for(const record of weather){const copy={...record};delete copy.id;copy.revision=`weather-${record.date}-${Date.parse(record.fetchedAt)}`;unique.set(`${record.date}|${record.fetchedAt}`,copy);}
+    const chunks=[];let current={journals:[],weather:[]};
+    for(const [type,list] of [['journals',journals],['weather',[...unique.values()]]])for(const record of list){
+      if(JSON.stringify(record).length>40000)throw new Error('한 기록이 전송 한도(40,000자)를 초과합니다. 메모 길이를 확인해 주세요.');
+      const next={journals:[...current.journals],weather:[...current.weather]};next[type].push(record);
+      if(JSON.stringify(next).length>limit&&(current.journals.length||current.weather.length)){chunks.push(current);current={journals:[],weather:[]};}
+      else current=next;
+      if(current!==next)current[type].push(record);
+    }
+    if(current.journals.length||current.weather.length)chunks.push(current);
+    return {chunks,journals:journals.length,weatherSnapshots:unique.size,weatherDays:new Set([...unique.values()].map(r=>r.date)).size};
+  }
+  async function run({journals,weather,syncId,request,onProgress=()=>{}}){
+    const snapshot=plan(journals,weather);
+    for(let i=0;i<snapshot.chunks.length;i++){
+      onProgress({step:'upload',index:i+1,total:snapshot.chunks.length,...snapshot});
+      const chunk=snapshot.chunks[i],result=await request('sync',{syncId,chunkId:i,...chunk});
+      if(result.protocol!==2||result.syncId!==syncId||result.chunkId!==i||result.journals!==chunk.journals.length||result.weather!==chunk.weather.length)throw new Error('전체 전송 확인 응답이 일치하지 않습니다. 최신 Apps Script 배포를 확인해 주세요.');
+    }
+    onProgress({step:'compile',...snapshot});
+    const report=await request('compile',{syncId});
+    if(report.protocol!==2||report.syncId!==syncId||report.workbookName!=='SJ 현장일지'||!['오늘일지','날씨기록','일지달력','그래프'].every(name=>report.tabs?.includes(name)))throw new Error('4개 탭의 취합 완료를 확인하지 못했습니다. 최신 Apps Script 배포를 확인해 주세요.');
+    return {snapshot,report};
+  }
+  const api={plan,run,hasContent};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.SJSyncCore=api;
+})(typeof window!=='undefined'?window:globalThis);
+
+;
+(function () {
+  'use strict';
+  const q=s=>document.querySelector(s), qa=(s,r=document)=>[...r.querySelectorAll(s)];
+  const storageKey='sj-journals-v1', configKey='sj-drive-v1';
+  let records={}, config={}, restoring=false, busy=false, timer, selected=q('#journal-date').value;
+  const status=(s,error=false)=>{q('#drive-status').textContent=s;q('#drive-dot').style.color=error?'#bd7151':config.url?'#78a76a':'#a1a993';};
+  try {records=JSON.parse(localStorage.getItem(storageKey)||'{}');config=JSON.parse(localStorage.getItem(configKey)||'{}');} catch {status('저장 자료를 읽지 못했습니다. 브라우저 저장소를 확인해 주세요.',true);}
+  const field=(root,name)=>root.querySelector(`[data-field="${name}"]`);
+  function capture(date) {
+    const equipment=window.Equipment.read(), ac=equipment.find(item=>item.type==='에어컨');
+    return {date,equipment,acStart:ac?.start||'',acEnd:ac?.end||'',notes:q('[name="notes"]').value,important:q('#notes-important').checked,
+      environment:qa('.measurement-row').map(row=>({area:row.dataset.area,period:row.dataset.period,confirmedAt:row.dataset.confirmedAt||'',sourceDate:row.dataset.sourceDate||'',humidity:row.querySelector('[data-metric="humidity"]').value,temperature:row.querySelector('[data-metric="temperature"]').value})),
+      work:qa('.work-area').map(area=>({area:area.dataset.area,items:qa('.work-entry',area).map(row=>({number:field(row,'number').value,parts:field(row,'parts').value,stage:row.querySelector('[aria-pressed="true"].stage-button')?.textContent||'',dryer:field(row,'dryer').checked,hours:field(row,'hours').value,dehumidifier:field(row,'dehumidifier').checked,memo:field(row,'memo').value}))})),
+      supplies:['sg','curtain'].map(kind=>({kind,items:qa('.item-entry',q(`#${kind}-items`)).map(row=>({number:field(row,'number').value,memo:field(row,'memo').value}))})),
+      weather:window.journalWeatherSummary?.startsWith(date)?window.journalWeatherSummary:''};
+  }
+  function persist() {localStorage.setItem(storageKey,JSON.stringify(records));}
+  function save() {
+    if(restoring)return false;
+    try {
+      const journal=capture(selected), previous=records[selected];
+      if(!previous&&!window.SJSyncCore.hasContent(journal))return true;
+      if(previous && JSON.stringify(previous.journal)===JSON.stringify(journal))return true;
+      const record={journal,revision:crypto.randomUUID(),updatedAt:new Date().toISOString(),sent:false};
+      records[selected]=record;persist();
+      status(config.url?'기기 저장 완료 · 드라이브 전송 대기':'기기 저장 완료 · 드라이브 연결 설정 필요');
+      if(config.auto){clearTimeout(timer);timer=setTimeout(send,2500);}
+      return true;
+    }catch{status('기기 저장 실패 · 저장 공간을 확인해 주세요. 입력 화면의 내용은 유지됩니다.',true);return false;}
+  }
+  function restore(date) {
+    restoring=true;
+    const data=records[date]?.journal;
+    window.Equipment.restore(data); q('[name="notes"]').value=data?.notes||'';q('#notes-important').checked=data?.important===true;
+    q('#notes-count').textContent=`${q('[name="notes"]').value.length}자`;
+    qa('.measurement-row').forEach(row=>{const item=data?.environment.find(x=>x.area===row.dataset.area&&x.period===row.dataset.period);row.dataset.confirmedAt=item?.confirmedAt||'';row.dataset.sourceDate=item?.sourceDate||'';row.querySelector('[data-metric="humidity"]').value=item?.humidity??'';row.querySelector('[data-metric="temperature"]').value=item?.temperature??'';});
+    qa('.work-area').forEach(area=>{
+      qa('.work-entry',area).forEach(row=>{row.disposeVoice?.();row.remove();});
+      const items=data?.work.find(x=>x.area===area.dataset.area)?.items||[{}];
+      items.forEach(item=>{addWork(area);const row=area.querySelector('.work-entry:last-child');['number','parts','hours','memo'].forEach(k=>field(row,k).value=item[k]||'');field(row,'dryer').checked=!!item.dryer;field(row,'hours').disabled=!item.dryer;row.querySelector('.dryer-duration').hidden=!item.dryer;field(row,'dehumidifier').checked=!!item.dehumidifier;qa('.stage-button',row).forEach(b=>b.setAttribute('aria-pressed',String(b.textContent===item.stage)));});
+    });
+    ['sg','curtain'].forEach(kind=>{qa('.item-entry',q(`#${kind}-items`)).forEach(row=>row.disposeVoice?.());q(`#${kind}-items`).replaceChildren();(data?.supplies.find(x=>x.kind===kind)?.items||[{}]).forEach(item=>{addItem(kind);const row=q(`#${kind}-items`).lastElementChild;field(row,'number').value=item.number||'';field(row,'memo').value=item.memo||'';});});
+    restoring=false;
+  }
+  function changeDate(){const next=q('#journal-date').value;if(!next||next===selected)return;save();selected=next;restore(next);status(records[next]?'기기에 보관한 일지를 불러왔습니다.':'새 날짜의 일지입니다. 입력하면 기기에 저장됩니다.');}
+  q('#journal-date').addEventListener('change',changeDate);
+  q('#today-button').addEventListener('click',changeDate);
+  const form=q('#journal-form');
+  form.addEventListener('input',e=>{if(e.target.id!=='journal-date')save();});
+  form.addEventListener('change',e=>{if(e.target.id!=='journal-date')save();});
+  form.addEventListener('click',e=>{if(e.target.closest('.stage-button,.add-button,.icon-button'))save();});
+  window.addEventListener('pagehide',save);
+  function validate(c){if(!/^https:\/\/script\.google\.com\/macros\/s\/[A-Za-z0-9_-]+\/exec$/.test(c.url))throw new Error('배포된 script.google.com의 /exec 주소를 입력해 주세요.');if(c.key.length<24)throw new Error('초기설정에서 발급한 연결 키를 입력해 주세요.');if(c.sheet&&!/^https:\/\/docs\.google\.com\/spreadsheets\/d\/[A-Za-z0-9_-]+(?:\/.*)?$/.test(c.sheet))throw new Error('Google Sheets 주소를 확인해 주세요.');}
+  async function request(c,action,record) {
+    validate(c);const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),30000);
+    try {
+      const response=await fetch(c.url,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({app:'sj-journal',version:1,key:c.key,action,record}),redirect:'follow',credentials:'omit',signal:controller.signal});
+      if(!response.ok)throw new Error(`응답 오류 ${response.status}`);
+      const data=await response.json();
+      if(data.app!=='sj-journal'||data.ok!==true)throw new Error(data.error||'올바른 SJ 현장일지 응답이 아닙니다.');
+      if((action==='save'||action==='weather'||action==='important')&&data.revision!==record.revision)throw new Error('전송 기록 확인에 실패했습니다.');
+      return data;
+    }catch(e){throw new Error(e.name==='AbortError'?'응답 시간 초과 · 저장 여부 미확인. 재전송 시 중복을 방지합니다.':e.message==='Failed to fetch'?'연결 실패 · 배포 권한과 인터넷 연결을 확인해 주세요. 전송 완료로 처리하지 않았습니다.':e.message);}finally{clearTimeout(timeout);}
+  }
+  let queued=false;
+  async function send(){
+    if(busy){queued=true;return;}
+    if(!save())return;
+    clearTimeout(timer);
+    if(!config.url){status('전체 전송을 위해 Google Drive 연결 설정이 필요합니다.',true);openSettings();return;}
+    const target={...config},syncId=crypto.randomUUID();
+    const journals=JSON.parse(JSON.stringify(Object.values(records)));
+    busy=true;queued=false;q('#drive-send').disabled=true;
+    const cloudStatus=(message,error=false)=>{status(message,error);q('#weather-cloud-status').textContent=message;q('#important-cloud-status').textContent=message;};
+    try{
+      cloudStatus('전체 전송 준비 중 · 저장된 원자료와 이력을 읽고 있습니다…');
+      const weather=await window.WeatherStore.exportAll();
+      const {snapshot:plan,report:result}=await window.SJSyncCore.run({journals,weather:[...weather.revisions,...weather.days],syncId,request:(action,record)=>request(target,action,record),onProgress:p=>cloudStatus(p.step==='upload'?`전체 자료 전송 중 ${p.index}/${p.total} · 일지 ${p.journals}일 / 날씨 ${p.weatherDays}일`:'원자료 전송 확인 · 4개 탭과 그래프를 취합하고 있습니다…')});
+      for(const sent of journals)if(records[sent.journal.date]?.revision===sent.revision)records[sent.journal.date].sent=true;
+      persist();
+      if(config.url===target.url&&/^https:\/\/docs\.google\.com\/spreadsheets\/d\/[A-Za-z0-9_-]+/.test(result.url||'')){config.sheet=result.url;localStorage.setItem(configKey,JSON.stringify(config));applyConfig();}
+      const changed=journals.some(sent=>records[sent.journal.date]?.revision!==sent.revision)||Object.keys(records).length!==journals.length;
+      if(changed)queued=true;
+      cloudStatus(`전체 저장 완료 · 일지 ${plan.journals}일 / 날씨 ${plan.weatherDays}일 · 4개 탭 취합 확인${changed?' / 전송 중 추가한 입력은 다음 전송 대기':''}`);
+    }catch(e){cloudStatus(`${e.message} · 전체 완료로 처리하지 않았습니다. 기기 자료는 유지되며 재전송할 수 있습니다.`,true);}
+    finally{busy=false;q('#drive-send').disabled=false;if(queued&&config.auto){queued=false;timer=setTimeout(send,2500);}}
+  }
+  window.addEventListener('sj-weather-saved',()=>{if(config.auto&&config.url){clearTimeout(timer);timer=setTimeout(send,2500);}});
+  function applyConfig(){q('#drive-auto').checked=!!config.auto;q('#drive-sheet').hidden=!config.sheet;if(config.sheet)q('#drive-sheet').href=config.sheet;}
+  function openSettings(){q('#drive-url').value=config.url||'';q('#drive-key').value=config.key||'';q('#drive-sheet-url').value=config.sheet||'';q('#drive-config-status').textContent='';q('#drive-dialog').showModal();}
+  const readConfig=()=>({url:q('#drive-url').value.trim(),key:q('#drive-key').value.trim(),sheet:q('#drive-sheet-url').value.trim(),auto:!!config.auto});
+  q('#drive-settings').addEventListener('click',openSettings);q('#drive-close').addEventListener('click',()=>q('#drive-dialog').close());
+  q('#drive-config').addEventListener('submit',e=>{e.preventDefault();try{const candidate=readConfig();validate(candidate);localStorage.setItem(configKey,JSON.stringify(candidate));config=candidate;applyConfig();q('#drive-dialog').close();status('설정 저장 완료 · 아직 전송 전입니다. 연결 확인 또는 전송해 주세요.');}catch(e){q('#drive-config-status').textContent=e.message;}});
+  q('#drive-test').addEventListener('click',async()=>{q('#drive-test').disabled=true;try{await request(readConfig(),'ping');q('#drive-config-status').textContent='연결 확인 성공 · 설정 저장을 눌러 주세요.';}catch(e){q('#drive-config-status').textContent=e.message;}finally{q('#drive-test').disabled=false;}});
+  q('#drive-auto').addEventListener('change',()=>{try{config.auto=q('#drive-auto').checked;localStorage.setItem(configKey,JSON.stringify(config));if(config.auto){if(!config.url)openSettings();else send();}else {clearTimeout(timer);status('자동 전송 꺼짐 · 기기 자동 저장 유지');}}catch{status('자동 전송 설정을 저장하지 못했습니다.',true);}});
+  q('#drive-send').addEventListener('click',send);
+  window.addEventListener('online',()=>{if(config.auto)send();});
+  window.JournalStore={list:()=>JSON.parse(JSON.stringify(Object.values(records))),flush:save,open(date){q('#journal-date').value=date;q('#journal-date').dispatchEvent(new Event('change'));}};
+  restore(selected);applyConfig();status(config.url?'연결 설정 있음 · 전송 대기 / 마지막 상태는 전송 후 확인':'연결 설정이 필요합니다 · 기기 자동 저장');
+  if(config.auto&&config.url)setTimeout(send,1500);
+})();
+
+;
+(function(){
+  'use strict';
+  function parse(text){
+    text=text.replace(/영하\s*/g,'-').replace(/마이너스\s*/g,'-');
+    const humidities=[...text.matchAll(/습도\s*[:는은]?\s*(\d+(?:\.\d+)?)/g)];
+    const temperatures=[...text.matchAll(/온도\s*[:는은]?\s*(-?\d+(?:\.\d+)?)/g)];
+    const humidity=humidities.at(-1)?.[1]??'',temperature=temperatures.at(-1)?.[1]??'';
+    if(humidity===''||temperature===''||!Number.isFinite(Number(humidity))||!Number.isFinite(Number(temperature))||Number(humidity)<0||Number(humidity)>100||Number(temperature)<-50||Number(temperature)>100)return null;
+    return {humidity,temperature};
+  }
+  window.EnvironmentHelpers={parse};
+  const rows=[...document.querySelectorAll('.measurement-row')];
+  rows.forEach(row=>{
+    const humidity=row.querySelector('[data-metric="humidity"]'),temperature=row.querySelector('[data-metric="temperature"]');
+    row.classList.add('compact-environment');
+    const speech=document.createElement('div');speech.className='compact-environment-voice';
+    speech.innerHTML=`<input type="text" data-field="memo" hidden><button type="button" class="voice-button" aria-pressed="false" aria-label="${row.dataset.area} ${row.dataset.period} 환경 음성 입력">● 음성 입력</button><p class="voice-status" role="status" aria-live="polite" hidden></p>`;
+    row.append(speech);
+    const transcript=speech.querySelector('input'),button=speech.querySelector('button'),status=speech.querySelector('.voice-status');
+    let binding;
+    button.addEventListener('click',()=>{status.hidden=false;if(button.getAttribute('aria-pressed')!=='true')transcript.value='';});
+    speech.addEventListener('input',event=>{
+      event.stopPropagation();
+      const draft=parse(transcript.value);
+      if(!draft)return;
+      humidity.value=draft.humidity;temperature.value=draft.temperature;
+      row.dataset.sourceDate='';row.dataset.confirmedAt=new Date().toISOString();
+      humidity.dispatchEvent(new Event('change',{bubbles:true}));
+    });
+    [humidity,temperature].forEach(input=>input.addEventListener('input',()=>{row.dataset.sourceDate='';row.dataset.confirmedAt=humidity.value!==''&&temperature.value!==''?new Date().toISOString():'';}));
+    function reset(){binding?.dispose();transcript.value='';binding=window.attachMemoVoice(speech,{hint:'“습도 42 온도 18”처럼 말하면 두 값이 입력됩니다. 음성은 브라우저 제공업체에서 처리될 수 있습니다.'});status.hidden=true;button.title='습도 42 온도 18처럼 말해 주세요';}
+    reset();row.resetEnvironmentVoice=reset;
+  });
+  const reset=()=>rows.forEach(row=>row.resetEnvironmentVoice());
+  document.querySelector('#journal-date').addEventListener('change',reset);
+  document.querySelector('#today-button').addEventListener('click',reset);
+})();
+
+;
+(function(){
+  'use strict';
+  const q=s=>document.querySelector(s);
+  const today=()=>new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+  let month=today().slice(0,7);
+  const node=(tag,label,cls)=>{const el=document.createElement(tag);el.textContent=label;if(cls)el.className=cls;return el;};
+  function open(date){window.JournalStore.open(date);history.replaceState(null,'','#today');window.showJournalView('today');window.scrollTo({top:0,behavior:'auto'});}
+  function render(){
+    const records=window.JournalStore.list();
+    const importantOnly=q('#important-only').checked;
+    q('#journal-list-title').textContent=importantOnly?'중요 특이사항 · 전체 기간':'이달의 기록';
+    const saved=new Map(records.map(r=>[r.journal.date,r]));
+    const [year,m]=month.split('-').map(Number);
+    q('#month-title').textContent=`${year}년 ${m}월`;
+    q('#journal-calendar').replaceChildren();q('#journal-month-list').replaceChildren();
+    const offset=new Date(year,m-1,1).getDay(),days=new Date(year,m,0).getDate();
+    for(let i=0;i<offset;i++){const blank=node('span','','calendar-blank');blank.setAttribute('aria-hidden','true');q('#journal-calendar').append(blank);}
+    for(let day=1;day<=days;day++){
+      const date=`${month}-${String(day).padStart(2,'0')}`,exists=saved.has(date),isToday=date===today();
+      const important=saved.get(date)?.journal.important===true;
+      const button=node('button','','calendar-day');button.type='button';
+      button.classList.toggle('is-important',important);
+      button.classList.toggle('has-journal',exists);button.classList.toggle('is-today',isToday);
+      button.setAttribute('aria-label',`${year}년 ${m}월 ${day}일${isToday?' 오늘':''}${important?' 중요':''}${exists?' 저장된 일지 열기':' 새 일지 작성'}`);
+      if(isToday)button.setAttribute('aria-current','date');
+      button.append(node('span',String(day)),node('span',important?'★':exists?'●':'','calendar-dot'));
+      button.addEventListener('click',()=>open(date));q('#journal-calendar').append(button);
+    }
+    const entries=records.filter(r=>importantOnly?r.journal.important===true:r.journal.date.startsWith(month+'-')).sort((a,b)=>b.journal.date.localeCompare(a.journal.date));
+    q('#journal-month-count').textContent=`${entries.length}건`;
+    entries.forEach(record=>{
+      const j=record.journal,button=node('button','','journal-list-entry');button.type='button';
+      const jobs=j.work.flatMap(area=>area.items.filter(item=>item.number||item.parts||item.stage||item.memo||item.dryer||item.dehumidifier));
+      button.classList.toggle('important-entry',j.important===true);
+      if(j.important)button.append(node('span','★ 중요','important-badge'));
+      button.append(node('strong',j.date),node('span',jobs.length?`작업 ${jobs.length}건 · ${jobs.map(item=>[item.number,item.stage].filter(Boolean).join(' ')).filter(Boolean).join(' / ')}`:'작업 기록 없음'),node('small',j.notes||'특이사항 없음'),node('small',record.sent?'드라이브 전송 확인됨':'기기 저장 · 드라이브 미전송'));
+      button.addEventListener('click',()=>open(j.date));q('#journal-month-list').append(button);
+    });
+    if(!entries.length)q('#journal-month-list').append(node('p',importantOnly?'중요로 표시한 특이사항이 없습니다.':'이달에 저장된 일지가 없습니다. 달력의 날짜를 눌러 작성해 보세요.','field-hint'));
+  }
+  function move(delta){const [year,m]=month.split('-').map(Number),date=new Date(year,m-1+delta,1);month=`${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}`;render();}
+  q('#month-prev').addEventListener('click',()=>move(-1));q('#month-next').addEventListener('click',()=>move(1));q('#month-today').addEventListener('click',()=>{month=today().slice(0,7);render();});
+  q('#important-only').addEventListener('change',render);
+  q('#export-important').addEventListener('click',()=>{
+    window.JournalStore.flush();
+    const entries=window.JournalStore.list().filter(r=>r.journal.important===true).sort((a,b)=>a.journal.date.localeCompare(b.journal.date));
+    if(!entries.length){q('#important-export-status').textContent='추출할 중요 기록이 없습니다.';return;}
+    const cell=value=>{let s=String(value??'');if(/^[=+\-@\t\r]/.test(s))s="'"+s;return '"'+s.replace(/"/g,'""')+'"';};
+    const lines=[['날짜','중요','특이사항','작업번호'],...entries.map(({journal:j})=>[j.date,'중요',j.notes||'',j.work.flatMap(area=>area.items.map(item=>item.number).filter(Boolean)).join(' / ')])];
+    const csv='\uFEFF'+lines.map(row=>row.map(cell).join(',')).join('\r\n');
+    const url=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));
+    const link=document.createElement('a');link.href=url;link.download=`SJ-중요특이사항-전체기간-${today()}.csv`;link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+    q('#important-export-status').textContent=`전체 기간 중요 특이사항 ${entries.length}건을 CSV로 추출했습니다.`;
+  });
+  window.addEventListener('sj-view',e=>{if(e.detail==='journals'){window.JournalStore.flush();render();}});
+  if(location.hash==='#journals')render();
+})();
+
+;
+(function(root){
+  'use strict';
+  const normalize=value=>String(value??'').normalize('NFKC').trim().toLocaleLowerCase('ko-KR');
+  function search(records,options){
+    const query=normalize(options.query);if(!query)return [];
+    const text=value=>normalize(value).includes(query);
+    const number=value=>options.exact?normalize(value)===query:text(value);
+    const scope=options.scope||'all',results=[];
+    for(const record of records){
+      const j=record.journal;
+      if(!j||options.from&&j.date<options.from||options.to&&j.date>options.to||options.important&&j.important!==true)continue;
+      for(const area of j.work||[]){
+        if(options.area&&area.area!==options.area)continue;
+        for(const item of area.items||[]){
+          if(options.stage&&item.stage!==options.stage)continue;
+          const matches=[];
+          if(['all','number'].includes(scope)&&number(item.number))matches.push('작업번호');
+          if(['all','parts'].includes(scope)&&number(item.parts))matches.push('기계번호');
+          if(['all','memo'].includes(scope)&&text(item.memo))matches.push('작업 메모');
+          if(matches.length)results.push({kind:'work',date:j.date,important:j.important===true,area:area.area,...item,matches});
+        }
+      }
+      // Area/stage filters apply only to work entries; unrelated day-level notes are excluded.
+      if(options.area||options.stage)continue;
+      if(['all','memo'].includes(scope)&&text(j.notes))results.push({kind:'notes',date:j.date,important:j.important===true,memo:j.notes,matches:['특이사항']});
+      if(['all','supplies'].includes(scope))for(const supply of j.supplies||[])for(const item of supply.items||[]){
+        if(number(item.number)||text(item.memo))results.push({kind:'supply',date:j.date,important:j.important===true,title:supply.kind==='sg'?'S/G':'커플링',...item,matches:['물품 기록']});
+      }
+    }
+    return results.sort((a,b)=>a.date.localeCompare(b.date));
+  }
+  function group(results){
+    const groups=new Map();
+    for(const item of results){const key=JSON.stringify(item.kind==='work'?['work',item.area,item.number||'']:item.kind==='supply'?['supply',item.title,item.number||'']:['notes']);
+      if(!groups.has(key))groups.set(key,{kind:item.kind,title:item.kind==='work'?`${item.area} · ${item.number||'작업번호 미입력'}`:item.kind==='supply'?`${item.title} · ${item.number||'번호 미입력'}`:'특이사항',items:[]});groups.get(key).items.push(item);
+    }
+    return [...groups.values()];
+  }
+  const api={search,group};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.JournalSearch=api;
+})(typeof window!=='undefined'?window:globalThis);
+
+;
+(function(){
+  'use strict';
+  const q=s=>document.querySelector(s),form=q('#record-search-form');
+  const node=(tag,label,cls)=>{const el=document.createElement(tag);el.textContent=label;if(cls)el.className=cls;return el;};
+  function render(){
+    const query=q('#search-query').value.trim();q('#search-results').replaceChildren();
+    if(!query){q('#search-status').textContent='작업번호·기계번호·메모를 입력해 주세요.';return;}
+    const options={query,scope:q('#search-scope').value,area:q('#search-area').value,stage:q('#search-stage').value,exact:q('#search-match').value==='exact',from:q('#search-from').value,to:q('#search-to').value,important:q('#search-important').checked};
+    if(options.from&&options.to&&options.from>options.to){q('#search-status').textContent='종료 날짜는 시작 날짜 이후로 선택해 주세요.';return;}
+    const results=JournalSearch.search(window.JournalStore.list(),options),groups=JournalSearch.group(results);
+    q('#search-status').textContent=results.length?`${new Set(results.map(r=>r.date)).size}일 · ${results.length}건 · ${groups.length}개 이력`:'일치하는 기록이 없습니다. 검색어나 필터를 확인해 주세요.';
+    for(const group of groups){
+      const section=node('section','','card search-group');section.append(node('h3',group.title));
+      if(group.kind==='work')section.append(node('p',group.items.map(item=>`${item.date.slice(5)} ${item.stage||'공정 미선택'}`).join(' → '),'search-stage-flow'));
+      for(const item of group.items){
+        const button=node('button','','search-entry');button.type='button';button.setAttribute('aria-label',`${item.date} ${group.title} 일지 열기`);
+        button.append(node('strong',`${item.date}${item.important?' · ★ 중요':''}`),node('span',item.matches.join(' · '),'search-match-label'));
+        if(item.kind==='work'){
+          button.append(node('span',`${item.parts?'기계번호 '+item.parts:'기계번호 미입력'} · ${item.stage||'공정 미선택'}`));
+          if(item.dryer||item.dehumidifier)button.append(node('small',[item.dryer?`건조로 ${item.hours?item.hours+'시간':'가동'}`:'',item.dehumidifier?'제습기 가동':''].filter(Boolean).join(' · ')));
+        }
+        if(item.memo)button.append(node('span',item.memo,'search-memo'));
+        button.append(node('small','일지 열기 →'));
+        button.addEventListener('click',()=>{window.JournalStore.open(item.date);history.replaceState(null,'','#today');window.showJournalView('today');window.scrollTo({top:0,behavior:'auto'});});
+        section.append(button);
+      }
+      q('#search-results').append(section);
+    }
+  }
+  form.addEventListener('submit',e=>{e.preventDefault();window.JournalStore.flush();render();});
+  let timer;q('#search-query').addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(render,180);});
+  form.addEventListener('change',render);
+  q('#search-reset').addEventListener('click',()=>{form.reset();render();q('#search-query').focus();});
+  window.addEventListener('sj-view',e=>{if(e.detail==='search'){window.JournalStore.flush();render();}});
+  if(location.hash==='#search')render();
+})();
+
+;
+(function(root){
+  'use strict';
+  function days(date,period){
+    if(!/^\d{4}-\d{2}-\d{2}$/.test(date))return [];
+    const end=new Date(date+'T12:00:00Z');if(!Number.isFinite(end.valueOf()))return [];
+    const start=new Date(end);
+    if(period==='month'){start.setUTCDate(1);end.setUTCMonth(end.getUTCMonth()+1,0);}else start.setUTCDate(start.getUTCDate()-6);
+    const result=[];for(const d=new Date(start);d<=end;d.setUTCDate(d.getUTCDate()+1))result.push(d.toISOString().slice(0,10));return result;
+  }
+  function value(raw,metric){if(raw===null||raw===undefined||String(raw).trim()==='')return null;const n=Number(raw);return Number.isFinite(n)&&n>=(metric==='humidity'?0:-50)&&n<=100?n:null;}
+  function build(records,dates,area='',period=''){
+    const byDate=new Map(records.map(r=>[r.journal.date,r.journal]));
+    const series=[];
+    for(const a of ['성장','태동'])for(const p of ['아침','오후']){
+      if(area&&a!==area||period&&p!==period)continue;
+      series.push({area:a,period:p,label:`${a} ${p}`,values:dates.map(date=>{const item=byDate.get(date)?.environment?.find(item=>item.area===a&&item.period===p);return {date,temperature:value(item?.temperature,'temperature'),humidity:value(item?.humidity,'humidity')};})});
+    }
+    return series;
+  }
+  const api={days,value,build};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.JournalGraph=api;
+})(typeof window!=='undefined'?window:globalThis);
+
+;
+(function(){
+  'use strict';
+  const q=s=>document.querySelector(s),ns='http://www.w3.org/2000/svg';
+  const colors=['#297963','#d49a35','#4676b6','#a46799'];
+  const color=s=>colors[(s.area==='태동'?2:0)+(s.period==='오후'?1:0)];
+  function node(tag,label,cls){const el=document.createElement(tag);el.textContent=label;if(cls)el.className=cls;return el;}
+  function svgNode(tag,attrs,label){const el=document.createElementNS(ns,tag);Object.entries(attrs).forEach(([k,v])=>el.setAttribute(k,v));if(label!==undefined)el.textContent=label;return el;}
+  function open(date){window.JournalStore.open(date);history.replaceState(null,'','#today');window.showJournalView('today');window.scrollTo({top:0,behavior:'auto'});}
+  function chart(target,metric,dates,series){
+    const container=q(target);container.replaceChildren();
+    const all=series.flatMap(s=>s.values.map(v=>v[metric]).filter(n=>n!==null));
+    if(!all.length){container.append(node('p','이 기간에 저장된 측정값이 없습니다.','graph-empty'));return;}
+    const min=metric==='humidity'?0:Math.floor(Math.min(...all)-2),max=metric==='humidity'?100:Math.ceil(Math.max(...all)+2);
+    const left=38,top=16,width=292,height=164;
+    const x=i=>left+(dates.length===1?width/2:i*width/(dates.length-1));const y=v=>top+(max-v)/(max-min)*height;
+    const svg=svgNode('svg',{viewBox:'0 0 346 221',role:'img','aria-label':`${dates[0]}부터 ${dates.at(-1)}까지 ${metric==='humidity'?'습도':'온도'} 추이`});
+    for(let i=0;i<=4;i++){const val=min+(max-min)*i/4,yy=y(val);svg.append(svgNode('line',{x1:left,y1:yy,x2:left+width,y2:yy,stroke:'#e1e8da'}),svgNode('text',{x:left-7,y:yy+4,'text-anchor':'end',fill:'#8d9a81','font-size':10},String(Math.round(val*10)/10)));}
+    const labelIndexes=[...new Set([0,Math.floor((dates.length-1)/3),Math.floor(2*(dates.length-1)/3),dates.length-1])];
+    for(const i of labelIndexes)svg.append(svgNode('text',{x:x(i),y:204,'text-anchor':'middle',fill:'#8d9a81','font-size':10},dates[i].slice(5).replace('-','/')));
+    for(const s of series){
+      let path='',pen=false;
+      s.values.forEach((v,i)=>{if(v[metric]===null){pen=false;return;}path+=`${pen?'L':'M'}${x(i)} ${y(v[metric])} `;pen=true;});
+      svg.append(svgNode('path',{d:path,fill:'none',stroke:color(s),'stroke-width':2,'stroke-linecap':'round'}));
+      s.values.forEach((v,i)=>{if(v[metric]===null)return;
+        const circle=svgNode('circle',{cx:x(i),cy:y(v[metric]),r:dates.length>10?3.5:5,fill:color(s),stroke:'#fff','stroke-width':1,tabindex:0,role:'button','aria-label':`${v.date} ${s.label} ${v[metric]}${metric==='humidity'?'%':'°C'} 일지 열기`});
+        circle.append(svgNode('title',{},`${v.date} ${s.label}: ${v[metric]}${metric==='humidity'?'%':'°C'}`));
+        circle.addEventListener('click',()=>open(v.date));circle.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open(v.date);}});svg.append(circle);
+      });
+    }
+    container.append(svg);
+    const minValue=Math.min(...all),maxValue=Math.max(...all),avg=Math.round(all.reduce((a,b)=>a+b,0)/all.length*10)/10,unit=metric==='humidity'?'%':'°C';
+    container.append(node('p',`측정 ${all.length}건 · 최저 ${minValue}${unit} · 평균 ${avg}${unit} · 최고 ${maxValue}${unit}`,'graph-stat'));
+  }
+  function render(){
+    const dates=JournalGraph.days(q('#graph-date').value,q('#graph-period').value);if(!dates.length){q('#graph-status').textContent='기준일을 선택해 주세요.';return;}
+    const series=JournalGraph.build(window.JournalStore.list(),dates,q('#graph-area').value,q('#graph-time').value);
+    q('#graph-status').textContent=`${dates[0]} ~ ${dates.at(-1)} · ${dates.length}일`;
+    q('#graph-legend').replaceChildren();for(const s of series){const label=node('span',s.label);const swatch=node('i','');swatch.style.background=color(s);label.prepend(swatch);q('#graph-legend').append(label);}
+    chart('#temperature-chart','temperature',dates,series);chart('#humidity-chart','humidity',dates,series);
+    q('#graph-table').replaceChildren();let count=0;
+    for(let i=dates.length-1;i>=0;i--)for(const s of series){const v=s.values[i];if(v.temperature===null&&v.humidity===null)continue;count++;const row=node('tr',''),dateCell=node('td',''),link=node('button',v.date,'graph-date-link');link.type='button';link.addEventListener('click',()=>open(v.date));dateCell.append(link);row.append(dateCell,node('td',s.label),node('td',v.temperature===null?'—':String(v.temperature)),node('td',v.humidity===null?'—':String(v.humidity)));q('#graph-table').append(row);}
+    if(!count){const row=node('tr',''),cell=node('td','저장된 측정값이 없습니다.');cell.colSpan=4;row.append(cell);q('#graph-table').append(row);}
+  }
+  q('#graph-date').value=new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+  ['graph-date','graph-period','graph-area','graph-time'].forEach(id=>q('#'+id).addEventListener('change',render));
+  window.addEventListener('sj-view',e=>{if(e.detail==='graphs'){window.JournalStore.flush();render();}});
+  if(location.hash==='#graphs')render();
+})();
+
+</script>
+</body>
+</html>
