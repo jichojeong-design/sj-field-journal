@@ -200,6 +200,42 @@ body{background:#e9ede7}.main-shell{width:100%;max-width:480px;margin:0 auto;bac
 })();
 
 ;
+(function () {
+  'use strict';
+  function place(dialog) {
+    let top=0, height=window.visualViewport?.height||window.innerHeight;
+    // Streamlit sizes this frame to the entire journal. Its center may be
+    // several screens below the visible parent viewport.
+    try {
+      if(window.parent!==window && window.frameElement){
+        const rect=window.frameElement.getBoundingClientRect();
+        const viewport=window.parent.visualViewport;
+        const start=viewport?.offsetTop||0;
+        top=Math.max(0,start-rect.top);
+        height=Math.max(0,Math.min(rect.height,start+(viewport?.height||window.parent.innerHeight)-rect.top)-top);
+      }
+    } catch { /* Standalone or inaccessible embedding: use this viewport. */ }
+    dialog.style.top=`${top+12}px`;
+    dialog.style.bottom='auto';
+    dialog.style.margin='0 auto';
+    dialog.style.maxHeight=`${Math.max(120,Math.min(720,height-24))}px`;
+    dialog.style.overflowY='auto';
+    dialog.style.overscrollBehavior='contain';
+  }
+  window.SJDialogs={open(dialog){place(dialog);dialog.showModal();}};
+  const update=()=>document.querySelectorAll('dialog[open]').forEach(place);
+  window.addEventListener('resize',update);
+  window.visualViewport?.addEventListener('resize',update);
+  try {
+    if(window.parent!==window){
+      window.parent.addEventListener('scroll',update,{capture:true,passive:true});
+      window.parent.addEventListener('resize',update);
+      window.parent.visualViewport?.addEventListener('resize',update);
+    }
+  } catch {}
+})();
+
+;
 (function(){
   'use strict';
   const q=s=>document.querySelector(s);
@@ -209,7 +245,7 @@ body{background:#e9ede7}.main-shell{width:100%;max-width:480px;margin:0 auto;bac
     const items=[['사용 환경',/Android/.test(ua)?'Android 갤럭시·모바일 계열':'PC 또는 기타 기기'],['주소 형식',location.protocol],['보안 환경',window.isSecureContext?'예':'아니요'],['브라우저 음성 API',window.SpeechRecognition||window.webkitSpeechRecognition?'있음 (서버 연결은 별도 확인)':'없음 — 이 실행 환경에서 사용할 수 없음'],['마이크 접근 API',navigator.mediaDevices?.getUserMedia?'있음':'없음 — 보안 연결·실행 앱 확인 필요']];
     for(const [name,value] of items){const dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=name;dd.textContent=value;q('#voice-check-info').append(dt,dd);}
     q('#voice-check-status').textContent='권한 확인 버튼을 누르면 마이크 사용을 요청하고 연결 후 즉시 종료합니다. 오디오는 녹음·전송하지 않습니다.';
-    q('#voice-check-dialog').showModal();
+    window.SJDialogs.open(q('#voice-check-dialog'));
   });
   q('#voice-check-close').addEventListener('click',()=>q('#voice-check-dialog').close());
   q('#voice-check-mic').addEventListener('click',async()=>{
@@ -378,7 +414,7 @@ $('#review-button').addEventListener('click', () => {
   });
   lines.push('', $('#notes-important').checked ? '[★ 중요 특이사항]' : '[특이사항]',$('[name="notes"]').value.trim() || '입력한 내용 없음');
   $('#review-content').textContent = lines.join('\n');
-  $('#review-dialog').showModal();
+  window.SJDialogs.open($('#review-dialog'));
 });
 ['close-review','back-to-form'].forEach(id => $(`#${id}`).addEventListener('click',() => $('#review-dialog').close()));
 
@@ -728,7 +764,7 @@ window.attachMemoVoice($('#notes-card'));
   }
   window.addEventListener('sj-weather-saved',()=>{if(config.auto&&config.url){clearTimeout(timer);timer=setTimeout(send,2500);}});
   function applyConfig(){q('#drive-auto').checked=!!config.auto;q('#drive-sheet').hidden=!config.sheet;if(config.sheet)q('#drive-sheet').href=config.sheet;}
-  function openSettings(){q('#drive-url').value=config.url||'';q('#drive-key').value=config.key||'';q('#drive-sheet-url').value=config.sheet||'';q('#drive-config-status').textContent='';q('#drive-dialog').showModal();}
+  function openSettings(){q('#drive-url').value=config.url||'';q('#drive-key').value=config.key||'';q('#drive-sheet-url').value=config.sheet||'';q('#drive-config-status').textContent='';window.SJDialogs.open(q('#drive-dialog'));}
   const readConfig=()=>({url:q('#drive-url').value.trim(),key:q('#drive-key').value.trim(),sheet:q('#drive-sheet-url').value.trim(),auto:!!config.auto});
   q('#drive-settings').addEventListener('click',openSettings);q('#drive-close').addEventListener('click',()=>q('#drive-dialog').close());
   q('#drive-config').addEventListener('submit',e=>{e.preventDefault();try{const candidate=readConfig();validate(candidate);localStorage.setItem(configKey,JSON.stringify(candidate));config=candidate;applyConfig();q('#drive-dialog').close();status('설정 저장 완료 · 아직 전송 전입니다. 연결 확인 또는 전송해 주세요.');}catch(e){q('#drive-config-status').textContent=e.message;}});
